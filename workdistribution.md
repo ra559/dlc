@@ -16,3 +16,9 @@
 4. Basic linux commands + docker commands -> Assigned to: ra559
 5. About page: -> Assigned to: lenthedev
 
+## Notes:
+* Image size page content: 200 x 200
+* for image resezing https://resizeimage.net/
+* File structure:
+    * Assets: All images here or anything related
+ 
