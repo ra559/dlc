@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="874fbf1d-f73c-4cc0-85b8-31cc07ab6e33" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dlc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dlc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workdistribution.md" beforeDir="false" afterPath="$PROJECT_DIR$/workdistribution.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +26,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -31,7 +37,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602652382066</updated>
-      <workItem from="1602652383179" duration="306000" />
+      <workItem from="1602652383179" duration="4781000" />
+      <workItem from="1602717605923" duration="4000" />
     </task>
     <servers />
   </component>
@@ -39,6 +46,18 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2659" y="1371" width="433" height="567" key="#HTTP_Proxy" timestamp="1602653465709">
+      <screen x="1920" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="2659" y="1371" width="433" height="567" key="#HTTP_Proxy/0.1108.1920.1052/3840.0.1920.1080/3840.1080.1920.1080/1920.1080.1920.1080@1920.1080.1920.1080" timestamp="1602653465709" />
+    <state x="2663" y="1378" width="426" height="492" key="FileChooserDialogImpl" timestamp="1602654319426">
+      <screen x="1920" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="2663" y="1378" width="426" height="492" key="FileChooserDialogImpl/0.1108.1920.1052/3840.0.1920.1080/3840.1080.1920.1080/1920.1080.1920.1080@1920.1080.1920.1080" timestamp="1602654319426" />
+    <state x="2384" y="1255" width="992" height="738" key="SettingsEditor" timestamp="1602654382187">
+      <screen x="1920" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="2384" y="1255" width="992" height="738" key="SettingsEditor/0.1108.1920.1052/3840.0.1920.1080/3840.1080.1920.1080/1920.1080.1920.1080@1920.1080.1920.1080" timestamp="1602654382187" />
     <state x="2543" y="1319" width="672" height="678" key="search.everywhere.popup" timestamp="1602652472872">
       <screen x="1920" y="1080" width="1920" height="1080" />
     </state>

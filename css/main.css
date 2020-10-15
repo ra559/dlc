@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+html,body{
+background-color:#0080ff;
+
+}
+.jumbotron{
+	font-size: 8em;
+	background-color: #343A40;
+	color: #0080ff;
+	font-family: 'Fredoka One', cursive;
+	border-radius: 0px;
+}
+.col-sm iframe,p{
+	text-align: justify;
+	line-height: 1.5em;
+	color: white;
+}
+.vids{
+background-color:#0080ff;
+}
+.col-sm h3{
+	color: white;
+	font-family: 'Fredoka One', cursive;
+}
+img{
+	text-align: center;
+}
+
+
