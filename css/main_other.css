@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+html,body{
+color: #343A4;
+
+}
+h1{
+	font-family: Rubik, Serif;
+	font-weight: normal;
+	}
+	
+h2, .lead{
+	font-family: Rubik, Serif;
+	font-weight: light;
+}
+
+p,body,span{
+	font-family: Karla, Serif;
+	line-height: 3vh;
+}
+
+.container, .container-fluid, .col-sm{
+	padding: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
