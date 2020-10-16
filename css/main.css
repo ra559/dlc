@@ -43,7 +43,17 @@ img{
 h3{
 	font-size: 32px;
 }
-
+.dropdown-menu{
+	background-color: #343A40;
+	border: 0px;
+}
+.dropdown-item{
+	color: rgba(255,255,255,.5);
+}
+.dropdown-item:hover{
+	color: #007bff;
+	background-color: #343A40;
+}
 
 @media (max-width:1060px) {
 	.jumbotron{
