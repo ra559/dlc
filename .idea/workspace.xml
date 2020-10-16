@@ -3,11 +3,33 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="874fbf1d-f73c-4cc0-85b8-31cc07ab6e33" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main_other.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main_other.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workdistribution.md" beforeDir="false" afterPath="$PROJECT_DIR$/workdistribution.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/~.bashrc" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +61,23 @@
       <updated>1602652382066</updated>
       <workItem from="1602652383179" duration="4781000" />
       <workItem from="1602717605923" duration="4000" />
-      <workItem from="1602799171387" duration="718000" />
+      <workItem from="1602799171387" duration="7039000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="2659" y="1371" width="433" height="567" key="#HTTP_Proxy" timestamp="1602653465709">
@@ -59,9 +92,14 @@
       <screen x="1920" y="1080" width="1920" height="1080" />
     </state>
     <state x="2384" y="1255" width="992" height="738" key="SettingsEditor/0.1108.1920.1052/3840.0.1920.1080/3840.1080.1920.1080/1920.1080.1920.1080@1920.1080.1920.1080" timestamp="1602654382187" />
-    <state x="2543" y="1319" width="672" height="678" key="search.everywhere.popup" timestamp="1602652472872">
-      <screen x="1920" y="1080" width="1920" height="1080" />
+    <state x="143" y="252" key="run.anything.popup" timestamp="1602800826792">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="143" y="252" key="run.anything.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1602800826792" />
+    <state x="623" y="261" width="672" height="661" key="search.everywhere.popup" timestamp="1602802417126">
+      <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="2543" y="1319" width="672" height="678" key="search.everywhere.popup/0.1108.1920.1052/3840.0.1920.1080/3840.1080.1920.1080/1920.1080.1920.1080@1920.1080.1920.1080" timestamp="1602652472872" />
+    <state x="623" y="261" width="672" height="661" key="search.everywhere.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1602802417126" />
   </component>
 </project>

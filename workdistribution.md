@@ -1,12 +1,8 @@
 # Work Distribution
 ## Video Tutorials:
-1. How to setup a webserver in docker
-    Linux version of tutorial  -> Assigned to: ra559
-    mac version of tutorial -> Assigned to: lenthedev
-    
-2. How to connect to docker with pycharm to write python code
-    Linux version of tutorial  -> Assigned to: ra559
-    Mac version of tutorial -> Assigned to: lenthedev
+1. How to setup a webserver in docker Assigned to: lenthedev
+
+2. How to connect to docker with pycharm to write python code Assigned to: ra559
     
 ## Website content:
 0. homepage -> Assigned to: ra559

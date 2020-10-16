@@ -3,21 +3,23 @@ html,body{
 background-color:#0080ff;
 
 }
+
 .jumbotron{
-	font-size: 8em;
+	font-size: 6em;
 	background-color: #343A40;
 	color: #0080ff;
 	font-family: 'Fredoka One', cursive;
 	border-radius: 0px;
+}
+h1{
+	padding: 100px 40px !important;
 }
 .col-sm iframe,p{
 	text-align: justify;
 	line-height: 1.5em;
 	color: white;
 }
-.vids{
-background-color:#0080ff;
-}
+
 .col-sm h3{
 	color: white;
 }
@@ -25,4 +27,32 @@ img{
 	text-align: center;
 }
 
+
+@media (max-width:1060px) {
+	.jumbotron{
+		font-size: 4em;
+
+
+	}
+}
+@media (max-width:538px) {
+	.jumbotron{
+		font-size: 3em;
+
+	}
+}
+
+@media (max-width:410px) {
+	.jumbotron{
+		font-size: 2em;
+
+	}
+}
+
+@media (max-width:280px) {
+	.jumbotron{
+		font-size: 1.5em;
+
+	}
+}
 
