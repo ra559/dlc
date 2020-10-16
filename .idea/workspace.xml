@@ -22,11 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874fbf1d-f73c-4cc0-85b8-31cc07ab6e33" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="874fbf1d-f73c-4cc0-85b8-31cc07ab6e33" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +54,7 @@
       <workItem from="1602652383179" duration="4781000" />
       <workItem from="1602717605923" duration="4000" />
       <workItem from="1602799171387" duration="9794000" />
+      <workItem from="1602809298239" duration="740000" />
     </task>
     <servers />
   </component>
@@ -74,6 +71,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2659" y="1371" width="433" height="567" key="#HTTP_Proxy" timestamp="1602653465709">
