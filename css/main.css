@@ -14,6 +14,13 @@ background-color:#0080ff;
 h1{
 	padding: 100px 40px !important;
 }
+.row{
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+.row p{
+	font-size: 18px;
+}
 .col-sm iframe,p{
 	text-align: justify;
 	line-height: 1.5em;
@@ -25,6 +32,16 @@ h1{
 }
 img{
 	text-align: center;
+}
+.navbar .container{
+	margin-top: 2%;
+	margin-left: 30%;
+}
+.nav-link{
+	font-size: 20px;
+}
+h3{
+	font-size: 32px;
 }
 
 
@@ -55,4 +72,27 @@ img{
 
 	}
 }
-
+@media (max-width:987px) {
+	.navbar .container{
+		margin-left: 0%;
+	}
+	.navbar .navbar-toggler{
+		margin-top: 2% !important;
+	}
+}
+@media (max-width:995px) {
+	h3{
+		font-size: 28px;
+	}
+	.row p{
+		font-size: 16px;
+	}
+}
+@media (max-width:760px) {
+	h3{
+		font-size: 24px;
+	}
+	.row p{
+		font-size: 14px;
+	}
+}
