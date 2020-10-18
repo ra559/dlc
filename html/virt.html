@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Virtualization</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/main_other.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Docker, Linux, and Containerization</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/cont.html">Containerization</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/virt.html">Virtualization</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/comp.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/linux.html">Linux</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="html/tut.html">
+                        Tutorials</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../html/tut1.html">Web server</a>
+                        <a class="dropdown-item" href="../html/tut2.html">Python App</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container"><!-- start of tittle and sentence container -->
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h1 class="mt-5">Virtualization</h1>
+            <p class="lead font-italic">Virtualization is the process of running a virtual instance of a computer system
+                in a layer abstracted from the actual hardware. Most commonly, it refers to running multiple operating
+                systems on a computer system simultaneously.
+                <a href="https://opensource.com/resources/virtualization#:~:text=Virtualization%20is%20the%20process%20of,on%20a%20computer%20system%20simultaneously.">
+                    <br><i>-Opensource.com</i></a></p>
+        </div>
+    </div>
+</div><!-- end of tittle and sentence container -->
+<div class="container-custom-body">
+
+
+
+    <div class="row"><!-- start of body of page content -->
+        <div class="col-lg-12"><!-- 3 paragraphs only -->
+            <p class="text-justify container-fluid">Virtualization allows system administrators to replicate make-believe
+                computers inside a single computer. The abstraction of computing resources can be achieved via software,
+                hardware, or a mix of both. The concept of virtualization is believed to have been originated during the 1960s
+                and 70’s when IBM started experimenting in time-sharing computing. Today, the computers that power the IT
+                infrastructure of many organizations, including Cloud Computing, utilize virtualization techniques to create
+                large aggregated pools of logical resources (CPUs, memory, disks, etc) from where an array of servers/services
+                can run.
+            </p>
+            <img class="rounded mx-auto d-block img-fluid" src="../assets/virtualbox_vms.png">
+            <p class="text-justify container-fluid">
+                Virtualization is achieved via the use of a hypervisor. A hypervisor is the piece that allows the creation
+                and management of virtual machines. A hypervisor can be physical (bare metal) or software. A virtual machine (VM)
+                is the emulated equivalent of a computer system that runs on top of another system. There are two types
+                of hypervisors, Type 1 and Type 2.
+            </p>
+            <ul>
+                <li>A <b>Type 1 hypervisor</b> installs on a computer before any operating system, also called a bare-metal hypervisor,
+                    and then it partitions the hardware for multiple VMs. This allows for the installation of different operating
+                    systems in each virtual machine. There are many vendors of type 1 hypervisors; two of the biggest being
+                    VMWare with ESXi and Citrix with XenServer. A popular usage of type 1 hypervisors is in server-hosted
+                    desktops where a server provides virtual desktops or VMs to multiple users over the local network or the cloud.
+                </li>
+                <li>A <b>Type 2 hypervisor</b> installs in a host operating system as an application, also, it is known as a
+                    hosted hypervisor. Examples of Type 2 hypervisors include Oracle Virtualbox, VMware Workstation or Player, and
+                    Windows Client Hyper-V. A Type 2 hypervisor is not as powerful as a Type 1 hypervisor because it is
+                    dependent on the host OS to allot its computing power. A VM in a Type 2 hypervisor is not as secure
+                    or as fast as a VM in a Type 1 hypervisor. The advantage that Type 2 has over Type 1 is that it requires
+                    less specific hardware. For instance, most modem consumer-grade computers can use type 2 hypervisors.
+                </li>
+            </ul>
+            <img class="rounded mx-auto d-block img-fluid" src="../assets/hypervisors.png">
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="row"><!-- 2 paragraphs with image -->
+        <div class="col-lg-12">
+            <h2>Advantages of Virtualization</h2>
+            <p class="text-justify container-fluid">
+                <ul>
+                    <li> Smaller carbon footprint   </li>
+                    <li>Reduce hardware maintenance and acquisition cost   </li>
+                    <li>Increased application availability   </li>
+                    <li>Better cross-platform support   </li>
+                    <li>Provides testing and debugging environment   </li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div  class="col-lg-12">
+            <h2>Setting up client-side virtualization</h2>
+            <p class="text-justify container-fluid">Any workstation that will implement virtual machines must meet the following criteria:</p>
+            <ul>
+                <li><b>Sufficient CPU cores: </b>Each VM has its own virtual processor, therefore, the host’s processor must be
+                a multi-core processor with support for hardware-assisted virtualization (HAV), and Intel-V or AMD-V which
+                is a technology that enhances the processor support for virtual machines.</li>
+                <li><b>Motherboard support: </b>Most of today’s motherboards support HAV, Intel-V or AMD-V but many computer
+                    manufacturers disable this feature by default. This can always be enabled in BIOS/UEFI settings.</li>
+                <li><b>Enough RAM: </b>It is crucial to have sufficient RAM since not only will the virtual machines consume
+                    RAM but so will the host operating system (in the case of type 2 hypervisors). Some hypervisors are
+                    designed so that each VM that is running ties up all the RAM that it has been assigned.</li>
+                <li><b>Storage space: </b>Each VM has its own virtual hard drive (VHD) therefore it will tie up space from the
+                    physical hard drive.</li>
+                <li><b>Network connection: </b>If the virtual machines will be used to connect to any network, make sure that
+                    the host has a good network card. It is possible to use multiple network cards.</li>
+            </ul>
+            <p class="text-center container-fluid font-italic">When deciding how to use the overall budget for a virtualization workstation,
+                prioritize the number of CPU cores and the amount of installed RAM.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div  class="col-lg-12">
+            <h2> How to install and configure a type 2 Hypervisor</h2>
+            <p>These instructions are carried out in Virtualbox. "VirtualBox is a powerful x86 and AMD64/Intel64 virtualization
+                product for enterprise as well as home use. Not only is VirtualBox an extremely feature-rich, high-performance 
+                product for enterprise customers, it is also the only professional solution that is freely available as 
+                Open Source Software under the terms of the GNU General Public License (GPL) version 2." <i><a
+                        href="https://www.virtualbox.org/">-Oracle</a></i>
+            </p>
+           <h3> Installation</h3>
+            <ol>
+                <li>To install Virtualbox, go to <a href="https://www.virtualbox.org/wiki/Downloads">Virtualbox Download Page.</a></li>
+                <li>Download the installer for your host operating system.</li>
+                <li>Also, Download the Virtualbox Extention Pack which will allow you to boost the performance and features of your virtual machines.</li>
+                <li>In Windows and Mac, VirtualBox can be installed the same way any other application is installed. In Linux systems, VirtualBox can be installed from the distribution repositories or by downloading the package from the download page.</li>
+                <li>For a video tutorial of how to install Virtualbox in Windows, macOS and Ubuntu:</li>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=2lGmCwpFYi8">Installing VirtualBox in Windows 10</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=fyx53lJyAoc">Installing Virtualbox in macOS</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=0hZIywHYR7A">Installing VirtualBox 6 in Ubuntu 20.04</a></li>
+                </ul>
+            </ol>
+            <h3>How to use Virtualbox</h3>
+            <!-- Google slide -->
+            <iframe class="container-fluid " src="https://docs.google.com/presentation/d/e/2PACX-1vTwJsImCvHoM2mQX6c5E2J11NPKGE90ip6kWV_LMPDCKQTG1QtcKTUGmsqkV1vKXdCUFtz66qan4PjJ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            <!-- end of Google slide -->
+            <h3>How to install Ubuntu 18.04 or 20.04 in a virtual machine</h3>
+            <span>The installation wizard of 18.04 and 20.04 is almost identical</span>
+            <!-- Google slide -->
+            <iframe class="container-fluid" src="https://docs.google.com/presentation/d/e/2PACX-1vQVjjsIYAyyDF9-yjC4tpfuKwFz3HPGCTFUH4KkUMeE7Ka7A_TD60kv-bx4wcReZGbqAp_KnbS260oZ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            <!-- end of Google slide -->
+        </div>
+    </div>
+
+
+    <!--footer -->
+    <!-- Site footer -->
+
+</div>
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-8">
+                <h6>About</h6>
+                <p class="text-justify">This page <i> its our attempt</i>
+                    at explaining the pillars of what makes DevOps. It
+                    starts with the definitions of Virtualization and Containerization alongside
+                    a comparison of both technologies. For containerization, we focus on Docker containers
+                    since they are the primary container technology. We also discus the Linux operating system
+                    and some basic commands to get any new user going. We hope you enjoy reading our tutorials too!
+                    <br><b>Cheers, The Team.</b>
+
+            </div>
+
+            <div class="col-sm-2 col-md-2">
+                <h6>Links</h6>
+                <ul class="footer-links">
+                    <li><a href="../html/home.html">Home</a></li>
+                    <li><a href="../html/comp.html">Comparison</a></li>
+                    <li><a href="../html/virt.html">Virtualization</a></li>
+                    <li><a href="../html/cont.html">Containerization</a></li>
+                    <li><a href="../html/tut1.html">Web server</a></li>
+                    <li><a href="../html/tut2.html">Python App</a></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-2 col-md-2 gitubst">
+                <h6>Github</h6>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/ra559" class="footer-links">Ra559</a></li>
+                    <li><a href="https://github.com/lenthedev" class="footer-links">Lenthedev</a></li>
+                    <li><a href="https://github.com/ra559/dlc.git" class="footer-links">Project</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<!-- end of page content container -->
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.slim.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
