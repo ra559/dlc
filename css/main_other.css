@@ -24,3 +24,14 @@ p,body,span{
 }
 
 
+.dropdown-item{
+	color: white;
+	background-color: #343A40;
+}
+.dropdown-item:hover{
+
+}
+.dropdown-menu{
+	background-color: #343A40;
+	border: 0px;
+}
