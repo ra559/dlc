@@ -5,3 +5,9 @@ The following tasks completed:
 3. Added google slides
 4. Fixed template page.
 5. Added youtube videos
+
+# Version 1.1
+0. Adding Linux commands - status - in progress
+1. Adding Docker commands - status - in progress
+
+
