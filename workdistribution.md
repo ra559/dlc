@@ -5,11 +5,11 @@
 2. How to connect to docker with pycharm to write python code Assigned to: ra559
     
 ## Website content:
-0. homepage -> Assigned to: ra559
-1. What is virtualization? -> Assigned to: ra559
+0. homepage -> Assigned to: ra559 -> Done
+1. What is virtualization? -> Assigned to: ra559 -> Done
 2. What is containerization?  -> Assigned to: lenthedev
 3. How do they compare?  -> Assigned to: lenthedev
-4. Basic linux commands + docker commands -> Assigned to: ra559
+4. Basic linux commands + docker commands -> Assigned to: ra559 -> In progress
 5. About page: -> Assigned to: lenthedev
 
 ## Notes:
