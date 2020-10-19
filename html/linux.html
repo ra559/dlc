@@ -83,8 +83,8 @@
 
 
     <div class="row">
+        <h2>What is Linux?</h2>
         <div class="col-lg-12">
-            <h2>What is Linux?</h2>
             <p class="text-justify container-fluid">Linux is a kernel. A kernel is the core of the operating system that is responsible for starting/stopping
                 other programs, handling requests for memory, accessing disks, and managing network connections. Abstractly,
                 people use the term Linux to refer to a given Linux Distribution which is defined as a collection of software
@@ -99,9 +99,8 @@
         </div>
     </div>
 
-    <div class="row"><!-- 3 column design -->
-        <div class="col-sm">
-             <h2>Linux Distributions</h2>
+    <div class="row">
+        <div class="col-lg-12">
             <p class="text-justify container-fluid">A complete Linux system package is called a Linux Distribution.
                 There is over 150 Linux distribution available to meet any computing requirement you could have. There
                 are two main Linux distributions that branch out most of the other distros out there: Debian and Redhat.
@@ -110,93 +109,124 @@
                 since they all share the same Kernel, they have more in common than they differ. Most Linux distributions
                 follow the Filesystem Hierarchy Standard and pack the Bash shell as the default shell. </p>
         </div>
-        <div class="col-sm">
-            <iframe class="container-fluid" width="700" height="350" src="https://www.youtube.com/embed/sheqhcrE1gs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
     </div>
 
 
     <div class="row">
-        <div class="col-lg-12">
-            <h2>Basic Linux Commands</h2>
-        </div>
+        <h2>Basic Linux Commands</h2>
         <!-- Moving around the filesystem -->
         <div class="col-lg-12">
             <h3>Moving Around The filesystem</h3>
-            <p class="text-justify container-fluid">A filesystem defines the way files are stored and organized in an operating system. Linux, like Unix, has a
-            root directory from where all the files are arranged. Linux follows the Filesystem Hierarchy Standard (FHS)
-            which specifies requirements and guidelines for file and directory placement in UNIX-like operating systems.
-            </p>
-            <img class="rounded mx-auto d-block img-fluid" src="../assets/linuxfilesystem.png" alt="">
-            <div class="row">
-                <div class="col-sm"><!-- PDW + CD Commands column -->
-                    <h4>pwd</h4>
-                    <div class="container-cmds">
-                        <p>The pwd is used for printing the present working directory. To use the pwd command use the following
-                            formula</p>
-                        <p class="cmds">pwd</p>
-                        <p><b>Example:</b></p>
-                        <li>Display where you are</li>
-                        <p class="cmds">pwd</p>
+                <p class="text-justify container-fluid">A filesystem defines the way files are stored and organized in an operating system. Linux, like Unix, has a
+                root directory from where all the files are arranged. Linux follows the Filesystem Hierarchy Standard (FHS)
+                which specifies requirements and guidelines for file and directory placement in UNIX-like operating systems.
+                </p>
+                <img class="rounded mx-auto d-block img-fluid" src="../assets/linuxfilesystem.png" alt="">
+                <div class="row">
+                    <div class="col-sm"><!-- PDW + CD Commands column -->
+                        <h4>pwd</h4>
+                        <div class="container-cmds">
+                            <p>The pwd is used for printing the present working directory. To use the pwd command use the following
+                                formula</p>
+                            <p class="cmds">pwd</p>
+                            <p><b>Example:</b></p>
+                            <li>Display where you are</li>
+                            <p class="cmds">pwd</p>
+                        </div>
+                        <hr>
+                        <h4>cd</h4>
+                        <div class="container-cmds">
+                            <p>The cd command is used for changing directories. The cd command takes for argument a destination
+                                in the form of an absolute path or relative path.
+                            <li>Absolute path: starts at the root of the filesystem: <span class="cmds">/home/user/Downloads/games</span></li>
+                            <li>Starts with a subdirectory of the present working directory: <span class="cmds">Downloads/games</span></li>
+                            To use the cd command use the following formula:</p>
+                            <p class="cmds">cd + destination</p>
+                            <p><b>Examples:</b></p>
+                            <p></p>
+                        </div>
+                        <hr>
                     </div>
-                    <hr>
-                    <h4>cd</h4>
-                    <div class="container-cmds">
-                        <p>The cd command is used for changing directories. The cd command takes for argument a destination
-                            in the form of an absolute path or relative path.
-                        <li>Absolute path: starts at the root of the filesystem: <span class="cmds">/home/user/Downloads/games</span></li>
-                        <li>Starts with a subdirectory of the present working directory: <span class="cmds">Downloads/games</span></li>
-                        To use the cd command use the following formula:</p>
-                        <p class="cmds">cd + destination</p>
-                        <p><b>Examples:</b></p>
-                        <p></p>
+
+                    <div class="col-sm"><!-- ls + tree Commands column -->
+                        <h4>ls</h4>
+                        <div class="container-cmds">
+                            <p>The ls command is used for listing all the files in a given directory. To use the ls commmand
+                            use the following formula</p>
+                            <p class="cmds">ls + option + directory or file to list</p>
+                            <p>When no directory is given, the ls command will list the present working directory. In Linux,
+                            a period at the beginning of a file name indicates a hidden file; ex: .bashrc</p>
+                            <p><b>Examples:</b></p>
+                            <p></p>
+                        </div>
+                        <hr>
+                        <h4>tree</h4>
+                        <div class="container-cmds">
+                            <p>The The tree is used to recursively list or display the content of a directory in a tree-like format.
+                            The tree program is not an internal command and must be installed with the package manager of your distribution.
+                            To install tree in Ubuntu/Debian use: <span class="cmds">sudo apt install tree -y</span> To use the
+                            tree command use the following formula: </p>
+                            <p class="cmds">tree + option + directory to list</p>
+                            <p>When no directory is given, the tree command will list the present working directory.</p>
+                            <p><b>Examples:</b></p>
+                            <p></p>
+                        </div>
+                        <hr>
                     </div>
-                    <hr>
                 </div>
-
-                <div class="col-sm"><!-- ls + tree Commands column -->
-                    <h4>ls</h4>
-                    <div class="container-cmds">
-                        <p>The ls command is used for listing all the files in a given directory. To use the ls commmand
-                        use the following formula</p>
-                        <p class="cmds">ls + option + directory or file to list</p>
-                        <p>When no directory is given, the ls command will list the present working directory. In Linux,
-                        a period at the beginning of a file name indicates a hidden file; ex: .bashrc</p>
-                        <p><b>Examples:</b></p>
-                        <p></p>
-                    </div>
-                    <hr>
-                    <h4>tree</h4>
-                    <div class="container-cmds">
-                        <p>The The tree is used to recursively list or display the content of a directory in a tree-like format.
-                        The tree program is not an internal command and must be installed with the package manager of your distribution.
-                        To install tree in Ubuntu/Debian use: <span class="cmds">sudo apt install tree -y</span> To use the
-                        tree command use the following formula: </p>
-                        <p class="cmds">tree + option + directory to list</p>
-                        <p>When no directory is given, the tree command will list the present working directory.</p>
-                        <p><b>Examples:</b></p>
-                        <p></p>
-                    </div>
-                    <hr>
-                </div>
-
-
-
-            </div>
-
-
-
-            <h4>ls</h4>
-
-            <hr>
-            <h4>tree</h4>
         </div>
-        
+
+
+
         <!-- Managing files and directories -->
         <div class="col-lg-12">
             <h3>Managing files and directories</h3>
+            <div class="row">
+                <div class="col-sm"> <!-- mkdir -->
+                    <h4>mkdir</h4>
+                        <div class="container-cmds">
+                            <p><b>Examples:</b></p>
+                            <p></p></div>
+                    <h4>rmdir</h4>
+                        <div class="container-cmds">
+                            <p><b>Examples:</b></p>
+                            <p></p>
+                        </div>
+                    <h4>mv</h4>
+                        <div class="container-cmds">
+                            <p><b>Examples:</b></p>
+                            <p></p>
+                        </div>
+                </div>
+
+
+
+
+                <div class="col-sm"> <!-- touch -->
+                    <h4>touch</h4>
+                        <div class="container-cmds">
+                            <p><b>Examples:</b></p>
+                            <p></p></div>
+                    <h4>rm</h4>
+                        <div class="container-cmds">
+                            <p><b>Examples:</b></p>
+                            <p></p>
+                        </div>
+                    <h4>cp</h4>
+                        <div class="container-cmds">
+                            <p><b>Examples:</b></p>
+                            <p></p>
+                        </div>
+                </div>
+
+
+            </div>
         </div>
+
+
+
+
+
 
         <!-- Handling Text Files -->
         <div class="col-lg-12">
@@ -207,7 +237,6 @@
         <div class="col-lg-12">
             <h3>System information</h3>
         </div>
-
     </div>
 
     <div class="row">
@@ -215,21 +244,14 @@
             <h2>Docker commands</h2>
         </div>
     </div>
-
-
-
-    <div class="row">
-        <div class="col-lg-12">
-            <img class="rounded mx-auto d-block img-fluid" src="../assets/tuxflag.png" width="100" height="60">
-        </div>
-    </div>
-    <!--footer -->
-    <!-- Site footer -->
-
 </div>
+        <!--docker here -->
 
 
 
+
+<!--footer -->
+<!-- Site footer -->
 <footer class="site-footer">
     <div class="container">
         <div class="row">
