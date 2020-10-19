@@ -35,3 +35,31 @@ p,body,span{
 	background-color: #343A40;
 	border: 0px;
 }
+.cmds{
+	font-family: "Courier New";
+	background-color: #343A40;
+	color: white;
+	padding-left: 2%;
+	padding-right: 2%;
+	border-radius: 8px;
+	text-align: center;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+h4{
+	text-align: center;
+	background-color: #0893aa;
+	color: white;
+	margin-bottom: 0px;
+	margin-top: 3%;
+}
+.container-cmds{
+	background-color: #1d6676;
+	padding: 2%;
+	margin-top: 0px;
+	color: white;
+}
+.container-cmds p{
+	margin-bottom: 1%;
+	margin-top: 1%;
+}
