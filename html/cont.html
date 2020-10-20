@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Template</title>
+    <title>Containerization</title>
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/main_other.css" rel="stylesheet">
@@ -123,11 +123,10 @@
             <h5 class="text-justify container-fluid">Installation Using Mac </h5>
             <ul>
                 <li class="mb-3">  First things first, download the mac installer from here: <a href="https://desktop.docker.com/mac/stable/Docker.dmg"> Docker Desktop for Mac </a></li>
-                <li> Next step is to open a Mac terminal and clone a repository to create your first container using the command:<ul> <li class="mb-3">"git clone https://github.com/docker/doodle.git" (Be sure to sign into git)</li></ul></li>
-                <li> Now we're going to build and tag a Docker image using the command: <ul> <li class="mb-3">"cd doodle/cheers2019 && docker build -t initlen/cheers2019" </li> </ul></li>
-                <li> Upon building our image, we want to run the image to assure that the installation was successful. Use the commmand: <ul> <li class="mb-3"> "docker run -it --rm initlen/cheers2019" </ul></li> </li>
-
-                <li> Lastly, we want to share our image on Docker using: <ul><li class="mb-3"> "docker login && docker push initlen/cheers2019"</li></ul></li>
+                <li> Next step is to open a Mac terminal and clone a repository to create your first container using the command:<ul> <li class="mb-3 cmds">"git clone https://github.com/docker/doodle.git" (Be sure to sign into git)</li></ul></li>
+                <li> Now we're going to build and tag a Docker image using the command: <ul> <li class="mb-3 cmds">"cd doodle/cheers2019 && docker build -t initlen/cheers2019" </li> </ul></li>
+                <li> Upon building our image, we want to run the image to assure that the installation was successful. Use the commmand: <ul> <li class="mb-3 cmds"> "docker run -it --rm initlen/cheers2019" </ul></li> </li>
+                <li> Lastly, we want to share our image on Docker using: <ul><li class="mb-3 cmds"> "docker login && docker push initlen/cheers2019"</li></ul></li>
             </ul>
             <h3 class="text-center mt-4 mb-4"> Installation Complete ! </h3>
             <img class="img-fluid center-block d-block mx-auto" src="../assets/docker.gif">

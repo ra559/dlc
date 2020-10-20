@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Template</title>
+    <title>Comparison</title>
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/main_other.css" rel="stylesheet">
@@ -59,25 +59,66 @@
     <div class="row">
         <div class="col-lg-12 text-center">
             <h1 class="mt-5">Containerization vs Virtualization</h1>
-            <p class="lead font-italic">Containerization is defined as a form of operating system virtualization, through which applications are run in isolated user spaces called containers, all using the same shared operating system (OS)
-                <a href="https://www.citrix.com/glossary/what-is-containerization.html">
-                    <br><i>-Citrix.com</i></a>
+            <p class="lead font-italic">The choice of virtualization versus containerization depends on the business development and operational model, and the way applications are written and produced.
+                <a href="https://www.Liquidweb.com">
+                    <br><i>-Liquidweb.com</i></a>
             </p>
         </div>
     </div>
 </div>
 <!-- end of title and sentence container -->
 <div class="container-custom-body">
+    <p class="container-fluid text-center mt-3"> Even though containers and VMs appear to overlap in functionality, definition, and use cases, they are their own different set of breeds. (Below are similarities and comparisons) </p>
     <div class="row mt-4">
-        <!-- start of body of page content -->
-        <div class="col-lg">
-            <p class="text-justify container-fluid"> Containers are an alternate kind of virtualization. Containers give a reliable run-time environment for a single application. At the point when you send an application into a container, the application container is ensured to run a similar way regardless of what server it runs
-                on. By deploying applications utilizing containers, you're ensured the application will run a similar way in the turn of development, testing, and production conditions. Containers don't contain as much overhead as virtual machines, making them simpler to distribute.
-            </p>
+        <!-- 3 column design -->
+        <div class="col-sm container-fluid text-center mb-5">
+            <table class="table-sm table-dark ">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col" class="text-center">Virtualization</th>
+                    <th scope="col" class="text-center"> Containerization </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td> Includes an entire operating system.</td>
+                    <td> Larger system resource footprint and requirements.  </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Does not need to utilize entire operating system to function </td>
+                    <td>The host OS and the app guest container have to run similar OSs. </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Each VM often needs its own kernel. Need a hypervisor. Slower creation and startup times. </td>
+                    <td>Minimal system resource footprint and requirements  </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="col">4</th>
+                    <td>Host dependent. The host OS can be completely different from the guest. Meaning you can run Windows, OS X, and Linux guest VMs inside a Linux host if wanted to.</td>
+                    <td>Each VM often needs its own kernel. Need a hypervisor. Slower creation and startup times. </td>
+                </tr>
+                <tr>
+                    <th scope="col">5</th>
+                    <td>More secure out of the box</td>
+                    <td>May be less secure out of the box, partly because of the easy availability of third-party images </td>
+                </tr>
+                <tr>
+                    <th scope="col">6</th>
+                    <td> Host dependent. The host OS can be completely different from the guest. Meaning you can run Windows, OS X, and Linux guest VMs inside a Linux host if wanted to.</td>
+                    <td> Fast creation and startup times </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     <!-- start of body of page content -->
     <div class="container-fluid mb-2 mt-4">
+        <h2 class="text-center mb-2"> Let's view a live comparison </h2>
         <div class="row">
             <iframe class="embed-responsive embed-responsive-16by9 mb-5" width="560" height="315" src="https://www.youtube.com/embed/L1ie8negCjc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -86,65 +127,18 @@
     <!-- /.container -->
     <div class="row">
         <!-- 2 paragraphs with image -->
-        <div class="col-lg-12">
-            <p class="text-justify container-fluid ">Containers were designed to improve development while packaging up code and all its dependencies so applications run quickly and reliably from one computing environment to another. A container gathers all of the files necessary to run an application—the runtime files, library files, database files, and any operating system–specific files. The container becomes self-sufficient for the application to run; every-thing the application needs is stored within the container.</p>
-            <img class="img-fluid center-block d-block mx-auto" src="../assets/containerization-application.png" height="300">
-            <h2 class="text-center mt-4 mb-4">  Container software </h2>
-            <p class="text-justify container-fluid mt-4">Linux has been in the forefront of container development, making it a popular choice for developers. Well known container software packages are:
-            <ul>
-                <li><b>Docker </b> </li>
-                <li><b> AWS Fargate </b> </li>
-                <li><b> Google Kubernetes Engine</b> </li>
-            </ul>
-            </p>
-            <h3 class="mb-3  mt-4 text-center"> What is Docker ? </h3>
-            <p class="text-center container-fluid"><i> Nothing beats reading the manual. So if you want to, Docker documentation can be found here : </i> <a href="https://docs.docker.com/get-started/overview/"> Docker</a> </p>
-            <p class="text-justify container-fluid mt-4">Docker is an open platform for developing, shipping, and running applications using OS-level virtualization to deliver software in containers. The isolation and security within Docker containers allows a developer to run many containers simultaneously on a given host. Containers are lightweight because they don’t require the extra capacity of a hypervisor but run directly within the host machine’s kernel. Meaning, a developer can run more containers on a given hardware combination compared to when using virtual machines.  </p>
+        <div class="col-lg-12 ">
+            <h5 > Information we've acquired from the video </h5>
+            <p class="text-justify container-fluid mb-5 ">Containers are commonly estimated by the megabyte. They don't bundle anything greater than an application and all the files needed to run and are frequently used to bundle single capacities that perform explicit tasks. The lightweight idea of containers—and their mutual working framework (OS)— makes them exceptionally simple to move over various environments. </p>
+            <p class="text-justify container mb-5"> VMs are regularly estimated by the gigabyte. They for the most part contain their own OS, permitting them to perform multiple functions at once. The expanded resources accessible to VMs permit them to abstract, split, copy, and imitate whole servers. OSs, desktops, information bases, and networks.</p>
+            <img class="img-fluid center-block d-block mx-auto" src="../assets/dockerVSvm.png" height="300">
         </div>
+        \
     </div>
-    <div class="row">
-        <!-- Advantages of Docker -->
-        <div class="col-sm mb-4">
-            <h3 class="text-center mt-4 mb-4"> Advantages of Using Docker </h3>
-            <p class="text-center container-fluid mt-4"> <i>Fast, consistent delivery of your applications</i> <a href="https://docs.docker.com/get-started/overview/"> - Docker</a> </p>
-            <p class="text-justify container-fluid">The following advantages developers have using Docker goes by the following :
-            <ul>
-                <li> Developers are able to write code locally and share instances of their work with colleagues using containers</li>
-                <li> Applications developed can be pushed into test environments and be executed either using automation or manually </li>
-                <li> When finding bugs, the risk of corrupting the main source files is lowered tremendously. Bugs can be fixed within containers and then redeployed</li>
-            </ul>
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <!-- Advantages of Docker -->
-        <div class="col-sm mb-4">
-            <h3 class="text-center mt-4 mb-4"> Installation of Docker </h3>
-            <h5 class="text-justify container-fluid">Installation Using Mac </h5>
-            <ul>
-                <li class="mb-3">  First things first, download the mac installer from here: <a href="https://desktop.docker.com/mac/stable/Docker.dmg"> Docker Desktop for Mac </a></li>
-                <li> Next step is to open a Mac terminal and clone a repository to create your first container using the command:<ul> <li class="mb-3">"git clone https://github.com/docker/doodle.git" (Be sure to sign into git)</li></ul></li>
-                <li> Now we're going to build and tag a Docker image using the command: <ul> <li class="mb-3">"cd doodle/cheers2019 && docker build -t initlen/cheers2019" </li> </ul></li>
-                <li> Upon building our image, we want to run the image to assure that the installation was successful. Use the commmand: <ul> <li class="mb-3"> "docker run -it --rm initlen/cheers2019" </ul></li> </li>
-
-                <li> Lastly, we want to share our image on Docker using: <ul><li class="mb-3"> "docker login && docker push initlen/cheers2019"</li></ul></li>
-            </ul>
-            <h3 class="text-center mt-4 mb-4"> Installation Complete ! </h3>
-            <img class="img-fluid center-block d-block mx-auto" src="../assets/docker.gif">
-            <h6 class="text-center mt-4 mb-4"> Installation on other Operating Systems: </h6>
-            <ul class="text-center container-fluid" style="list-style-type: none">
-                <li><a href="https://docs.docker.com/docker-for-windows/install/"> Windows </a> </li>
-                <li> <a href="https://docs.docker.com/engine/install/debian/"> Debian</a> </li>
-                <li><a href="https://docs.docker.com/engine/install/ubuntu/"> Ubuntu</a></li>
-            </ul>
-            </p>
-        </div>
-    </div>
-
-    <!--Installation of docker-->
-
-    <!--footer -->
-    <!-- Site footer -->
+</div>
+<!--Installation of docker-->
+<!--footer -->
+<!-- Site footer -->
 </div>
 <footer class="site-footer">
     <div class="container">
