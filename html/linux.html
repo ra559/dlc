@@ -512,30 +512,30 @@
             <h5 class="text-justify container-fluid">AWK Examples:</h5>
             <ul>
                 <li>Print all lines that contain a given string <span class="cmds">awk '/student/{print}' data.csv</span>
-                    <img src="../assets/awk1.png" alt="">
+                    <img class="rounded mx-auto d-block img-fluid" src="../assets/awk1.png" alt="">
                 </li>
                 <li>Awk can split a file into fields. It does it using field variables represented by their position in
                     the line. For example, the sentence "Bill plays pong" will be split in $1="Bill" $2="plays" $3="pong".
                     <span class="cmds">awk '{print $1,$3}' data.csv</span>
-                    <img src="../assets/awk2.png" alt="">
+                    <img class="rounded mx-auto d-block img-fluid" src="../assets/awk2.png" alt="">
                 </li>
                 <li>Using the awk NR command to keep count of the lines <span class="cmds">awk '{print NR,$1}' data.csv</span>
-                    <img src="../assets/awk3.png" alt="">
+                    <img class="rounded mx-auto d-block img-fluid" src="../assets/awk3.png" alt="">
                 </li>
                 <li>Using the NF variable, awk prints the last field <span class="cmds">awk '{print $NF}' data.csv</span>
-                    <img src="../assets/awk4.png" alt=>
+                    <img class="rounded mx-auto d-block img-fluid" src="../assets/awk4.png" alt=>
                 </li>
                 <li>Using the NR command to print specific lines <span class="cmds">awk 'NR==2, NR==5 {print NR, $0}' data.csv</span>
-                    <img src="../assets/awk5.png" alt="">
+                    <img class="rounded mx-auto d-block img-fluid" src="../assets/awk5.png" alt="">
                 </li>
                 <li>Print specific lines with separator <span class="cmds">awk '{print NR ":" $3}' data.csv</span>
-                    <img src="../assets/awk7.png" alt="">
+                    <img class="rounded mx-auto d-block img-fluid" src="../assets/awk7.png" alt="">
                 </li>
                 <li>Count the number of lines in a file <span class="cmds">awk 'END {print NR}' data.csv</span></li>
                 <li>Print all the lines that have more, less, or an exact number of characters (>,<,==) <span class="cmds">awk '{length($0) > 15}' data.csv</span>
-                    <img src="../assets/awk6.png" alt="">
+                    <img class="rounded mx-auto d-block img-fluid" src="../assets/awk6.png" alt="">
                 </li>
-                <p><i>Important note: Awk is extreamly powerfull. If you want to master it, here are some resources:</i>
+                <p><i>Important note: Awk is extremely powerful. If you want to master it, here are some resources:</i>
                     <ul>
                         <li>Visit <a href="https://www.geeksforgeeks.org/awk-command-unixlinux-examples/">GeeksforGeeks Awk's page</a></li>
                         <li>Visit <a href="https://sites.google.com/site/xiangyangsite/home/technical-tips/linux-unix/shell-programming/awk-tips/8-powerful-awk-built-in-variables-fs-ofs-rs-ors-nr-nf-filename-fnr">Daniel Han's Technical Notes</a></li>
@@ -544,10 +544,65 @@
                     </ul>
                 </p>
             </ul>
-
-
+            <h3>CLI Text Editors</h3>
+            <p class="container-fluid text-justify">Everything in Linux is a file, therefore, you will find your self editing
+            config files or source code very often. This is reason why it is cannonical to learn how to edit text in the
+            command line. Linux has a large number of CLI text editors. Te most popular are:</p>
+            <ul>
+                <li><a href="https://www.vim.org/">Vi/Vim</a><br></li>
+                <li><a href="https://www.nano-editor.org/">Nano</a></li>
+                <li><a href="https://www.gnu.org/software/emacs/">Emacs</a></li>
+            </ul>
+            <h5>Tutorial for learning vim</h5>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="1179" height="663" src="https://www.youtube.com/embed/IiwGbcd8S7I" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <h5>Tutorial for learning nano</h5>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="1179" height="663" src="https://www.youtube.com/embed/gyKiDczLIZ4" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <h5>Tutorial for learning emacs</h5>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe  width="1179" height="663" src="https://www.youtube.com/embed/Iagbv974GlQ" frameborder="0"
+                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                         allowfullscreen></iframe>
+            </div>
+            <p>The general advise for command line text editors is to learn the basics of vim and then master at least 1
+            CLI text editor. Learning vim is important because when linux is in Single User mode or has crashed, the only
+            text editor available is Vi.</p>
             <!--System information-->
-
+            <h3>Getting System Information</h3>
+            <p class="container-fluid text-justify">The following is a list of commands that you can use to get information about your system</p>
+                <ul>
+                    <li><span class="cmds">uname</span> :Display basic information about the operating system name and system hardware.
+                        <br>
+                        <b>Example:</b>
+                        <br>
+                        Display all basic information <span class="cmds">uname -a</span>
+                    </li>
+                    <li><span class="cmds">lshw</span> :Displays detailed information of the system’s hardware configuration.
+                        <b>Note:</b> This command can display more information if run with sudo. <br>
+                        <b>Example:</b>
+                        <br>
+                        Display all information <span class="cmds">sudo lshw</span>
+                    </li>
+                    <li><span class="cmds">lsusb</span> :Display the information about USB buses and the devices connected to them.<br>
+                        <b>Example</b>
+                        <br>
+                        Display all connected USB devices <span class="cmds">lsusb</span>
+                    </li>
+                    <li><span class="cmds">lscpu</span> and <span class="cmds">lspci</span> :Lscpu is used  for displaying CPU information
+                        and Lscpu is used for display PCI bus information. <br>
+                        <b>Example:</b>
+                        <br>
+                        Display information about CPU <span class="cmds">lscpu</span>
+                        <br>Display information about PCI Buss <span class="cmds">lspci</span>
+                    </li>
+                </ul>
             <!--Networking Commands-->
 
             <!-- end of commands section -->

@@ -46,3 +46,8 @@ p,body,span{
 	margin-top: 1%;
 	margin-bottom: 1%;
 }
+h3{
+	background-color: #0c5460;
+	color: whitesmoke;
+	padding: 1%;
+}
