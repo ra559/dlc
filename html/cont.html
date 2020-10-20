@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Template</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/main_other.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Docker, Linux, and Containerization</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/cont.html">Containerization</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/virt.html">Virtualization</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/comp.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/linux.html">Linux</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="html/tut.html">
+                        Tutorials</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../html/tut1.html">Web server</a>
+                        <a class="dropdown-item" href="../html/tut2.html">Python App</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Page Content -->
+<div class="container-fluid">
+    <!-- start of tittle and sentence container -->
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h1 class="mt-5">Containerization </h1>
+            <p class="lead font-italic">Containerization is defined as a form of operating system virtualization, through which applications are run in isolated user spaces called containers, all using the same shared operating system (OS)
+                <a href="https://www.citrix.com/glossary/what-is-containerization.html">
+                    <br><i>-Citrix.com</i></a>
+            </p>
+        </div>
+    </div>
+</div>
+<!-- end of title and sentence container -->
+<div class="container-custom-body">
+    <div class="row mt-4">
+        <!-- start of body of page content -->
+        <div class="col-lg">
+            <p class="text-justify container-fluid"> Containers are an alternate kind of virtualization. Containers give a reliable run-time environment for a single application. At the point when you send an application into a container, the application container is ensured to run a similar way regardless of what server it runs
+                on. By deploying applications utilizing containers, you're ensured the application will run a similar way in the turn of development, testing, and production conditions. Containers don't contain as much overhead as virtual machines, making them simpler to distribute.
+            </p>
+        </div>
+    </div>
+    <!-- start of body of page content -->
+    <div class="container-fluid mb-2 mt-4">
+        <div class="row">
+            <iframe class="embed-responsive embed-responsive-16by9 mb-5" width="560" height="315" src="https://www.youtube.com/embed/EnJ7qX9fkcU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    <div class="row">
+        <!-- 2 paragraphs with image -->
+        <div class="col-lg-12">
+            <p class="text-justify container-fluid ">Containers were designed to improve development while packaging up code and all its dependencies so applications run quickly and reliably from one computing environment to another. A container gathers all of the files necessary to run an application—the runtime files, library files, database files, and any operating system–specific files. The container becomes self-sufficient for the application to run; every-thing the application needs is stored within the container.</p>
+           <img class="img-fluid center-block d-block mx-auto" src="../assets/containerization-application.png" height="300">
+            <h2 class="text-center mt-4 mb-4">  Container software </h2>
+            <p class="text-justify container-fluid mt-4">Linux has been in the forefront of container development, making it a popular choice for developers. Well known container software packages are:
+            <ul>
+                <li><b>Docker </b> </li>
+                 <li><b> AWS Fargate </b> </li>
+                <li><b> Google Kubernetes Engine</b> </li>
+        </ul>
+            </p>
+            <h3 class="mb-3  mt-4 text-center"> What is Docker ? </h3>
+            <p class="text-center container-fluid"><i> Nothing beats reading the manual. So if you want to, Docker documentation can be found here : </i> <a href="https://docs.docker.com/get-started/overview/"> Docker</a> </p>
+            <p class="text-justify container-fluid mt-4">Docker is an open platform for developing, shipping, and running applications using OS-level virtualization to deliver software in containers. The isolation and security within Docker containers allows a developer to run many containers simultaneously on a given host. Containers are lightweight because they don’t require the extra capacity of a hypervisor but run directly within the host machine’s kernel. Meaning, a developer can run more containers on a given hardware combination compared to when using virtual machines.  </p>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Advantages of Docker -->
+        <div class="col-sm mb-4">
+            <h3 class="text-center mt-4 mb-4"> Advantages of Using Docker </h3>
+            <p class="text-center container-fluid mt-4"> <i>Fast, consistent delivery of your applications</i> <a href="https://docs.docker.com/get-started/overview/"> - Docker</a> </p>
+            <p class="text-justify container-fluid">The following advantages developers have using Docker goes by the following :
+            <ul>
+                <li> Developers are able to write code locally and share instances of their work with colleagues using containers</li>
+                <li> Applications developed can be pushed into test environments and be executed either using automation or manually </li>
+                <li> When finding bugs, the risk of corrupting the main source files is lowered tremendously. Bugs can be fixed within containers and then redeployed</li>
+        </ul>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Advantages of Docker -->
+        <div class="col-sm mb-4">
+            <h3 class="text-center mt-4 mb-4"> Installation of Docker </h3>
+            <h5 class="text-justify container-fluid">Installation Using Mac </h5>
+            <ul>
+                <li class="mb-3">  First things first, download the mac installer from here: <a href="https://desktop.docker.com/mac/stable/Docker.dmg"> Docker Desktop for Mac </a></li>
+                <li> Next step is to open a Mac terminal and clone a repository to create your first container using the command:<ul> <li class="mb-3">"git clone https://github.com/docker/doodle.git" (Be sure to sign into git)</li></ul></li>
+                <li> No we're going to build and tag a Docker image using the command: <ul> <li class="mb-3">"cd doodle/cheers2019 && docker build -t initlen/cheers2019" </li> </ul></li>
+                <li> Upon building our image, we want to run the image to assure that the installation was successful. Use the commmand: <ul> <li class="mb-3"> "docker run -it --rm initlen/cheers2019" </ul></li> </li>
+
+                <li> Lastly, we want to share our image on Docker using: <ul><li class="mb-3"> "docker login && docker push initlen/cheers2019"</li></ul></li>
+            </ul>
+            <h3 class="text-center mt-4 mb-4"> Installation Complete ! </h3>
+            <img class="img-fluid" src="../assets/docker.gif">
+            <h6 class="text-center mt-4 mb-4"> Installation on other Operating Systems: </h6>
+            <ul class="text-center container-fluid" style="list-style-type: none">
+                <li><a href="https://docs.docker.com/docker-for-windows/install/"> Windows </a> </li>
+                <li> <a href="https://docs.docker.com/engine/install/debian/"> Debian</a> </li>
+                <li><a href="https://docs.docker.com/engine/install/ubuntu/"> Ubuntu</a></li>
+            </ul>
+            </p>
+        </div>
+    </div>
+
+    <!--Installation of docker-->
+
+    <!--footer -->
+    <!-- Site footer -->
+</div>
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-8">
+                <h6>About</h6>
+                <p class="text-justify">This page <i> its our attempt</i>
+                    at explaining the pillars of what makes DevOps. It
+                    starts with the definitions of Virtualization and Containerization alongside
+                    a comparison of both technologies. For containerization, we focus on Docker containers
+                    since they are the primary container technology. We also discus the Linux operating system
+                    and some basic commands to get any new user going. We hope you enjoy reading our tutorials too!
+                    <br><b>Cheers, The Team.</b>
+            </div>
+            <div class="col-sm-2 col-md-2">
+                <h6>Links</h6>
+                <ul class="footer-links">
+                    <li><a href="../html/home.html">Home</a></li>
+                    <li><a href="../html/comp.html">Comparison</a></li>
+                    <li><a href="../html/virt.html">Virtualization</a></li>
+                    <li><a href="../html/cont.html">Containerization</a></li>
+                    <li><a href="../html/tut1.html">Web server</a></li>
+                    <li><a href="../html/tut2.html">Python App</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2 col-md-2 gitubst">
+                <h6>Github</h6>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/ra559" class="footer-links">Ra559</a></li>
+                    <li><a href="https://github.com/lenthedev" class="footer-links">Lenthedev</a></li>
+                    <li><a href="https://github.com/ra559/dlc.git" class="footer-links">Project</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end of page content container -->
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.slim.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
