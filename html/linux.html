@@ -607,6 +607,106 @@
 
             <!-- end of commands section -->
 
+            <!-- Docker command -->
+            <h2>Docker commands</h2>
+            <h3>Run a new container</h3>
+            <ul>
+                <li>Start a container from an image</li>
+                <span class="cmds">docker run image-name</span>
+                <li>Start a container with a name assigned</li>
+                <span class="cmds">docker run --name container_name container_image</span>
+                <li>Start a container and map a port</li>
+                <span class="cmds">docker run -p host_port:continer_port image</span>
+                <li>Start a container and map all ports
+                <span class="cmds">docker run -P image</span></li>
+                <li>Start a container in the background
+                <span class="cmds">docker run -d image</span>
+                </li>
+                <li>Start a container with an assigned hostname
+                    <span class="cmds">docker run --hostname hostname_for_image image</span>
+                </li>
+                <li>Start a container with a dns entry
+                <span class="cmds">docker run --add-host hostname:ip image</span></li>
+                <li>Start a container and map a local directory into the container
+                <span class="cmds">docker run -v host-directory:target-directory image</span> <br>
+                Example: <br><span class="cmds">docker run -v ~/website:/var/www/html/ apache2</span></li>
+                <li>Start a container but change the entry point
+                <span class="cmds">docker run -it --entrypoint executable image</span>
+                    <br>Example:<br>
+                    <span class="cmds">docker run -it --entrypoint bash nginx</span>
+                </li>
+            </ul>
+            <h3>Manage containers</h3>
+            <ul>
+                <li>Show a list of running containers
+                <span class="cmds">docker ps</span></li>
+                <li>Show a list of all containers
+                <span class="cmds">docker ps -a</span></li>
+                <li>Delete a container
+                <span class="cmds">docker rm container</span></li>
+                <li>Delete stopped container
+                <span class="cmds">docker container prune</span></li>
+                <li>Stop a running container
+                <span class="cmds">docker stop container</span></li>
+                <li>Start a stopped container
+                <span class="cmds">docker start container</span></li>
+                <li>Copy a file from a container to the host
+                <span class="cmds">docker cp container:source target</span><br>Example: <br>
+                <span class="cmds">docker cp web:/index.html index.html</span></li>
+                <li>Copy a file from the host to a container
+                <span class="cmds">docker cp target container:source</span><br>Example: <br>
+                <span class="cmds">docker cp index.html web:/index.html</span></li>
+                <li>Start a shell inside a running container
+                <span class="cmds">docker exec -it container executable</span><br>Example: <br>
+                <span class="cmds">docker exec -it web bash</span></li>
+                <li>Rename a container
+                <span class="cmds">docker rename old-name new-name</span></li>
+                <li>Create an image out of a container
+                <span class="cmds">docker commit container</span></li>
+            </ul>
+            <h3>Manage images</h3>
+            <ul>
+                <li>Download an image
+                <span class="cmds">docker pull image</span></li>
+                <li>Upload an image to a repository
+                <span class="cmds">docker push image</span></li>
+                <li>Delete an image
+                <span class="cmds">docker rmi image</span></li>
+                <li>List all images
+                <span class="cmds">docker images</span></li>
+                <li>Delete dangling images
+                <span class="cmds">docker image prune</span></li>
+                <li>Delete all unused images
+                <span class="cmds">docker image prune -a</span></li>
+                <li>Build an image from a Dockerfile
+                <span class="cmds">docker build Directory</span></li>
+                <li>Tag an image
+                <span class="cmds">docker tag image newimage</span></li>
+                <li>Build and tag an image from a docker file
+                <span class="cmds">docker build -t image directory</span></li>
+                <li>Save an image to .tar file
+                <span class="cmds">docker save image > file.tar</span></li>
+                <li>Load an image from a .tar file
+                <span class="cmds">docker load -i file.tar</span></li>
+            </ul>
+            <h3>Info and stats</h3>
+            <ul>
+                <li>Show the logs for a container
+                <span class="cmds">docker logs container</span></li>
+                <li>Show stats of running container
+                <span class="cmds">docker stats</span></li>
+                <li>Show processes of a container
+                <span class="cmds">docker top container</span></li>
+                <li>Show installed docker version
+                <span class="cmds">docker version</span></li>
+                <li>Get detailed info about an object
+                <span class="cmds">docker inspect name</span></li>
+                <li>Show all modified files in container
+                <span class="cmds">docker diff container</span></li>
+                <li>Show mapped ports of a container
+                <span class="cmds">docker port container</span></li>
+            </ul>
+
         </div>
         <!-- end of body of page content -->
         <!-- Site footer -->
