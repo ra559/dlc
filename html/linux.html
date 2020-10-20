@@ -118,11 +118,11 @@
             The cd command can use absolute path, regular path, or no path at all if the user wants to go to their home directory. Sometimes you want to see
             whats inside a particular directory. This is called listing the content of a directory. Other times you want to see some information about a file or
             a directory such as the size of the file or who owns it. For all of these scenarios we use the <span class="cmds">ls</span> command.</p>
-            <h4>Pwd Examples:</h4>
+            <h5 class="container-fluid text-justify">PWD Examples:</h5>
             <ul>
                 <li>Display where you are: <span class="cmds">pwd</span></li>
             </ul>
-            <h4>Cd Examples:</h4>
+            <h5 class="container-fluid text-justify"> CD Examples:</h5>
             <ul>
                 <li>Change your present working directory to another: <span class="cmds">cd /etc/rules.d<</span></li>
                 <li>Change directory to the previous present working directory.<span class="cmds">cd -</span></li>
@@ -133,7 +133,7 @@
                 <span>Option 2 </span> <span class="cmds">cd ~</span>
                 <span>Option 3 </span> <span class="cmds">cd $HOME</span>
             </ul>
-            <h4>Ls Examples:</h4>
+            <h5 class="container-fluid text-justify">LS Examples:</h5>
             <ul>
                 <li>Long list all the files including hidden files.
                 <span class="cmds">ls -la ~/Downloads/</span></li>
@@ -162,7 +162,7 @@
                 You can create a directory with a space in its name using the escape character (\) or by surrounding the name in quotation marks (‘ ‘ or “ ” ).
                 If you try to create a directory that already exists, you will get an error notifying you that the file already exists.
             </p>
-            <h4>Mkdir Examples:</h4>
+            <h5 class="container-fluid text-justify">MKDIR Examples:</h5>
             <ul>
                 <li>Create a directory in the present working directory
                 <span class="cmds">mkdir wallpapers</span></li>
@@ -184,7 +184,7 @@
             <p class="container-fluid text-justify">To create files we use the touch command. Although the touch program
             was not designed for creating files (in fact it is an unintended result) it was designed for updating files accesses time.
             </p>
-            <h4>Touch Examples:</h4>
+            <h5 class="container-fluid text-justify">TOUCH Examples:</h5>
             <ul>
                 <li>To create a file called list <span class="cmds">touch list</span></li>
                 <li>To create several files: <span class="cmds">touch list_of_cars.txt script.py names.csv</span></li>
@@ -197,7 +197,7 @@
                 directories. To remove a directory use rm with the -r option. In Linux and other Nix systems you cannot remove non empty directories.
                 To remove empty directories use the rmdir command. To remove non-empty directories use rm -r + directory name or directory absolute path.
             </p>
-            <h4>Rm Examples:</h4>
+            <h5 class="container-fluid text-justify">RM Examples:</h5>
             <ul>
                 <li>Remove a file <span class="cmds">rm list</span>
                 <li>Remove a file and prompt confirmation before removal <span class="cmds">rm -i list</span></li>
@@ -215,7 +215,7 @@
                 <li>To move a directory from one directory to another using absolute path <span class="cmds">sudo mv ~/Downloads/theme /usr/share/themes</span></li>
                 <li>To move multiple directories/files to a different directory <span class="cmds">mv games/ wallpapers/ rockmusic/ /media/student/flashdrive/</span></li>
             </ul>
-            <h4>Mv Examples (renaming files)</h4>
+            <h5 class="container-fluid text-justify">MV Examples (renaming files)</h5>
             <ul>
                 <li>To rename a file <span class="cmds">mv homework.docx cis106homework.docx</span></li>
                 <li>To rename a file using absolute path <span class="cmds"> mv ~/Downloads/homework.docx ~/Downloads/cis106homework.docx</span></li>
@@ -225,7 +225,7 @@
             <p class="text-justify container-fluid">What if you want to copy the files instead of moving them? in this case
             we use the <span class="cmds">cp</span> command. The cp command follows the same formula as the mv command:
             cp + files to copy + destination. When moving directories cp commands requires the  -r or -R argument.</p>
-            <h4>Cp examples:</h4>
+            <h5 class="container-fluid text-justify">CP examples:</h5>
             <ul>
                 <li>To copy a file
                 <span class="cmds">cp Downloads/wallpapers.zip Pictures/</span></li>
@@ -245,6 +245,7 @@
             <h4>The Cat Command</h4>
             <p class="container-fluid text-justify">The <span class="cmds">cat</span> command is short for concatenate and it is used for concatenating files and displaying the content of a text file.
                 To use the cat command follow this formula: <span class="cmds">cat + option + filename</span></p>
+            <h5 class="container-fluid text-justify">CAT Examples:</h5>
             <ul>
                 <li>Display the contents of a file <span class="cmds">cat file.txt</span></li>
                 <li>Concatenate several files <span class="cmds">cat ~/Documents/file1.txt ~/Downloads/file2.txt</span></li>
@@ -265,6 +266,7 @@
             To use the more use the following program: <span class="cmds">more + option + file or command output</span> To use the less command
             use the following formula: <span class="cmds">less + file </span></p>
             <p class="container-fluid text-justify">Examples of the more and less command</p>
+            <h5 class="container-fluid text-justify">TAC Examples:</h5>
             <ul>
                 <li>load a text file <span class="cmds">more program.py</span></li>
                 <li>Pass the output of a command <span class="cmds">lshw | more</span></li>
@@ -278,6 +280,7 @@
             <p class="container-fluid text-justify">Displays a given number of lines or bytes of a file. If no option given
                 it displays the fist 10 lines of a file. To use the head command, use the following formula
             <span class="cmds">head + option + file</span></p>
+            <h5 class="container-fluid text-justify">HEAD Examples:</h5>
             <ul>
                 <li>Print the first 10 lines of a file <span class="cmds">head /etc/passwd</span></li>
                 <li>Prints the first n number of a file <span class="cmds"> head -5 /etc/passwd</span></li>
@@ -286,6 +289,7 @@
             </ul>
             <h4>The Tail Command</h4>
             <p class="container-fluid text-justify">Displays the last 10 lines of a given file.</p>
+            <h5 class="container-fluid text-justify">TAIL Examples:</h5>
             <ul>
                 <li>Print the last 10 lines of a file <span class="cmds">tail /etc/passwd</span></li>
                 <li>Prints the last n number of a file <span class="cmds">tail -5 /etc/passwd</span></li>
@@ -293,6 +297,254 @@
                 <li>Suppress the filename when more than one file is given <span class="cmds">tail -q /etc/passwd file.txt</span></li>
                 <li>Display appended data <span class="cmds">tail -f access.log</span></li>
             </ul>
+            <h4>The Cut Command</h4>
+            <p class="container-fluid text-justify">The cut command is used to extract a specific section of each line of a file and display it to the screen.
+            To use the cut command, use the following formula: <span class="cmds">cut option + file</span></p>
+            <h5 class="container-fluid text-justify">CUT Examples:1</h5>
+            <ul>
+                <li>Cut n number of bytes per line (1 byte = 1 character). This command will cut byte 1 2 3 4 5 of each line <span class="cmds"> cut -b 1,2,3,4,5 usernames.txt </span></li>
+                <li>Cut a range of bytes per line <span class="cmds"> cut -b 1-5 usernames.txt</span></li>
+                <li>Cut a by characters. Use this command to ensure that cut uses characters. There instances in which a
+                character is more than 1 byte long. This depends on the character encoding used to translate between
+                characters and bytes. For example, UTF-32 represents each character with 4 bytes, whereas, UTF-8 uses
+                between 1 and 4 bytes. <span class="cmds"> cut -c 1,2,3 ipaddresses.txt</span></li>
+                <li>Cut a file using a delimiter like a comma or period. For example, the /etc/passwd file is separated by
+                ":" the following command will display a list of users in your system. <span class="cmds"> Cut -d ':' -f 1 /etc/passwd</span></li>
+                <li>Cut a file using a delimiter but changing the delimiter in the output. For example, the following command '
+                will list all the users in your system and their login shell. <span class="cmds"> cut -d ':' -s -f1,7 --output-delimiter="=" /etc/passwd</span></li>
+                <li>Cut a file using a new line as a delimiter. For example, the following command will display all the
+                    users and their hashed password each in a new line. <span class="cmds"> sudo cut -d ':' -f1,2 --output-delimiter=$'\n' /etc/shadow-</span></li>
+                <li>Cut a file excluding a given field <span class="cmds">cut -d ',' --complement -s -f3 users.txt</span></li>
+            </ul>
+            <h4>The paste command</h4>
+            <p class="container-fluid text-justify">The paste command is used to joing files horizontally in columns.
+            To use the paste command use the following formula: <span class="cmds">paste option + files</span></p>
+            <h5 class="container-fluid text-justify"> PASTE Examples:</h5>
+            <ul>
+                <li>Merge files with paste <span class="cmds">paste users.txt ip.txt</span></li>
+                <li>Merge files using a different delimiter <span class="cmds">paste -d ">"users.txt ip.txt</span></li>
+                <li>Merge files using more than one delimiter <span class="cmds">paste -d ":-" users.txt ip.txt country.txt</span></li>
+            </ul>
+            <h4>The sort command</h4>
+            <p class="text-justify container-fluid">The sort command is used for arranging a text file in a particular order. The sort command is used for arranging a text file in a particular order. The sort command arranges a file line by line. Sorting works in the following way:
+                <ul>
+                    <li>Lines starting with a number appear first</li>
+                    <li>Lines starting with a letter are sorted alphabetically in ascending order</li>
+                    <li>Lines starting with a lowercase letter appear before uppercase</li>
+                </ul>
+            To use sort command, follow this formula: <span class="cmds"> sort + option + file</span>
+            </p>
+            <p>Examples of the sort command</p>
+            <ul>
+                <li>sort a file and save the output to a new file <span class="cmds">sort -o usersSorted.txt users.txt</span></li>
+                <li>Sort in reverse order <span class="cmds">sort -r users.txt</span></li>
+                <li>Sort a file with numeric data <span class="cmds">sort -n numbers.txt</span></li>
+                <li>Sort a file with numeric data in reverse order <span class="cmds">sort -nr numbers.txt</span></li>
+                <li>Sort by column number <span class="cmds">sort -k 2 users.txt</span></li>
+                <li>Check if a file is sorted <span class="cmds">sort -c users.txt</span></li>
+                <li>Sort and remove duplicated entries <span class="cmds">sort -u users.txt</span></li>
+            </ul>
+            <h4>The wc command</h4>
+            <p class="container-fluid text-justify">The wc command is used for printing the number of lines, characters, and bytes in a file.
+            To use the wc command,follow this formula: <span class="cmds">wc option + file</span></p>
+            <h5 class="container-fluid text-justify">WC Examples:</h5>
+            <ul>
+                <li>Display the number of bytes in a file <span class="cmds">wc -c file.txt</span></li>
+                <li>Display the number of characters in a file <span class="cmds">wc -m file.txt</span></li>
+                <li>Display the number of lines in a file <span class="cmds">wc -l file.txt</span></li>
+                <li>Display the number of words in a file <span class="cmds">wc -w file.txt</span></li>
+
+            </ul>
+            <h4>The tr command</h4>
+            <p class="container-fluid text-justify">The tr command is used for translating or deleting characters from standard output. To use the tr command
+            use the following formula: <span class="cmds">command output | + tr + option + set + set</span></p>
+            <div class="container text-justify">
+                <h5><b>Regular Expressions character classes:</b></h5>
+                <table class="table-responsive table-striped">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th>POSIX class</th>
+                        <th>Represents</th>
+                        <th>Means</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>[:upper:]</td>
+                        <td>[A-Z]</td>
+                        <td>Upper case letters</td>
+                    </tr>
+                    <tr>
+                        <td>[:lower:]</td>
+                        <td>[a-z]</td>
+                        <td>Lower case letters</td>
+                    </tr>
+                    <tr>
+                        <td>[:alpha:]</td>
+                        <td>[A-Za-z]</td>
+                        <td>Upper and Lower case letters</td>
+                    </tr>
+                    <tr>
+                        <td>[:alnum:]</td>
+                        <td>[A-Za-z0-9]</td>
+                        <td>Lower case, upper case, and digits</td>
+                    </tr>
+                    <tr>
+                        <td>[:digit:]</td>
+                        <td>[0-9]</td>
+                        <td>digits</td>
+                    </tr>
+                    <tr>
+                        <td>[:xdigit:]</td>
+                        <td>[0-9A-Fa-f]</td>
+                        <td>hexadecimal digits</td>
+                    </tr>
+                    <tr>
+                        <td>[:punct:]</td>
+                        <td>[.,!?:...]</td>
+                        <td>puctuation</td>
+                    </tr>
+                    <tr>
+                        <td>[:blank:]</td>
+                        <td>[\t]</td>
+                        <td>space and tabs</td>
+                    </tr>
+                    <tr>
+                        <td>[:cntrl:]</td>
+                        <td>n/a</td>
+                        <td>control characters</td>
+                    </tr>
+                    <tr>
+                        <td>[:graph:]</td>
+                        <td>[^\t\n\r\g\v]</td>
+                        <td>printed characters without spaces</td>
+                    </tr>
+                    <tr>
+                        <td>[:print:]</td>
+                        <td>[^\t\n\r\g\v]</td>
+                        <td>printed characters including spaces</td>
+                    </tr>
+                    <tr>
+                        <td>[:space:]</td>
+                        <td>[ \t\n\r\g\v]</td>
+                        <td>whitespace characters</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h5 class="text-justify container-fluid">TR Examples:</h5>
+            <ul>
+                <li>Translate . to , (or any other character) <span class="cmds">cat file.txt | tr '.' ',' file.txt</span></li>
+                <li>Translate white space into tabs <span class="cmds">cat file.py | tr [:space:] '\t'</span></li>
+                <li>Translate tabs into spaces <span class="cmds">cat file.py | tr -s "[:space:]" ' '</span></li>
+                <li>Delete specified character (delete all uppercase letters) <span class="cmds">cat file.txt | tr -d '[:upper:]'</span></li>
+                <li>Delete all characters except upper case letters <span class="cmds">cat file | tr -cd "[:lower:]"</span></li>
+                <li>Convert all lower case characters to upper case characters  <span class="cmds">cat file.txt | tr "[a-z]" "[A-Z]"</span> or use: <span class="cmds">
+                    cat file.txt | tr "[:lower:]" "[:upper:]"
+                </span></li>
+            </ul>
+            <h4>The diff command</h4>
+            <p class="container-fluid text-justify">The diff command comparares files and display the differences between them. To use the
+            diff command, follow this formula: <span class="cmds">diff option + file + file</span></p>
+            <h5 class="text-justify container-fluid">DIFF Examples:</h5>
+            <ul>
+                <li>Display the difference between two files<span class="cmds">diff file1 file2</span></li>
+                <li>Display the difference between two files only if the files are different <span class="cmds">diff -q file1 file2</span></li>
+                <li>Display the difference between two files in column format<span class="cmds">diff -y file1 and file2</span></li>
+            </ul>
+            <h4>The find command</h4>
+            <p class="container-fluid text-justify">The find command is used for finding files in your system. To use the find command,
+            follow this formula: <span class="cmds">find + start directory + option + file name to search</span></p>
+            <h5 class="text-justify container-fluid">FIND Examples:</h5>
+            <ul>
+                <li>Find a file in the home directory <span class="cmds">find /home/$USER -name "program.py"</span></li>
+                <li>Find a file in the home directory ignoring case sensitivity <span class="cmds">find /home/$USER -iname "program.py"</span></li>
+                <li>Find a directory <span class="cmds">find / -type d -name "games"</span></li>
+                <li>Find files using their permissions<span class="cmds">find / -type f -perm 644</span></li>
+                <li>Find and remove files <span class="cmds">find /home/$USER -type f -name "*.docx" -exec rm -f {} \;</span></li>
+                <li>Find empty files <span class="cmds">find /home/$USER -type -f -empty</span></li>
+                <li>Find empty directories <span class="cmds">find /home/$USER -type -d -empty</span></li>
+                <li>Find hidden files <span class="cmds">find / -type -f name ".*"</span></li>
+                <li>Find all files modified in last 7 days <span class="cmds">find / -atime 7</span></li>
+                <li>Find all files modifed more than a week ago and less than a month <span class="cmds">find / -mtime +7 -mtime -30</span></li>
+                <li>Find all files which size are 1GB <span class="cmds">find / -size 1024M</span></li>
+            </ul>
+            <h4>The sed command</h4>
+            <p class="text-justify container-fluid">The sed command is stream editor used for filtering and transforming text.
+            To use the sed command, follow this formula: <span class="cmds">sed + option + sed command + file</span></p>
+            <h5 class="container-fluid text-justify">SED Examples:</h5>
+            <ul>
+                <li>Substituting a string with another <span class="cmds">sed 's/old/new/' file.txt</span></li>
+                <li>Substituting n position of a string with another <span class="cmds">sed 's/old/new/5' file.txt</span></li>
+                <li>Substituting all occurrences of a string with another <span class="cmds">sed 's/old/new/g' file.txt</span></li>
+                <li>Substituting all occurrences of a string with another after a given position <span class="cmds">sed 's/old/new/5g' file.txt</span></li>
+                <li>Substituting a string with another on a specific line <span class="cmds">sed '5 s/old/new/' file.txt</span></li>
+                <li>Substituting a string with another on a range of lines <span class="cmds">$sed '1,5 s/old/new/' file.txt</span></li>
+                <li>Delete a specific line of a file <span class="cmds">sed '2d' file.txt</span></li>
+                <li>Delete a range of lines <span class="cmds">sed '3,8d' file.txt</span></li>
+                <li>Display a range of lines <span class="cmds">sed -n 8,12p file.txt</span></li>
+                <li>Display all the content of a file except a range of lines <span class="cmds">sed -n 8,12d file.txt</span></li>
+                <li>Display all the content of a file except the last line <span class="cmds">sed $d file.txt</span></li>
+                <li>Add an empty line after every non blank line <span class="cmds">sed G file.txt</span></li>
+                <li>Use multiple sed commands <span class="cmds">sed -e 's/old/new/g' -e 's/windows/ubuntu/' file.txt</span></li>
+                <li>Delete all the lines that start with a given string and ends in another given string <span class="cmds">sed -e 's/start.*end//g' file.txt</span></li>
+                <li>Removing all commented lines and empty lines on a given script <span class="cmds">sed -e 's/#.*//;/^$/d' file.sh</span></li>
+                <li>Removing comments only <span class="cmds">sed -e 's/#.*//' file.sh</span></li>
+            </ul>
+            <h4>The Awk command:</h4>
+            <p class="container-fluid text-justify">Awk is a scripting language used for processing and displaying text.
+                Awk can work with a text file or from standard output. Awk was created in Bell Labs during the 70s by Alfred Aho,
+                Peter Weinberger, and Brian Kernighan and its name comes from its authors' initials. There are several
+                implementations of Awk: nawk, mawk, gawk, and busybox.
+                <br>From Stackoverflow by the user: <a href="https://unix.stackexchange.com/users/885/gilles-so-stop-being-evil">Gilles 'SO- stop being evil'.</a>
+                <br>
+                <ul>
+                AWK is a programming language. There are several implementations of AWK (mostly in the form of interpreters).
+            AWK has been codified in POSIX. The main implementations in use today are:
+                    <li>nawk (“new awk”, an evolution of oawk, the original UNIX implementation), used on *BSD and widely available on Linux;</li>
+                    <li>mawk, a fast implementation that mostly sticks to standard features;</li>
+                    <li>gawk, the GNU implementation, with many extensions;</li>
+                    <li>the Busybox (small, intended for embedded systems, not many features).</li>
+                    If you only care about standard features, call awk, which may be Gawk or nawk or mawk or some other implementation. If you want the features in GNU awk, use gawk or Perl or Python.
+                 </ul>
+            To use awk, follow this formula, <span class="cmds">awk + options +a ction with or without selection +file or standard output redirection +file to save (optional)</span>
+            </p>
+            <h5 class="text-justify container-fluid">AWK Examples:</h5>
+            <ul>
+                <li>Print all lines that contain a given string <span class="cmds">awk '/student/{print}' data.csv</span>
+                    <img src="../assets/awk1.png" alt="">
+                </li>
+                <li>Awk can split a file into fields. It does it using field variables represented by their position in
+                    the line. For example, the sentence "Bill plays pong" will be split in $1="Bill" $2="plays" $3="pong".
+                    <span class="cmds">awk '{print $1,$3}' data.csv</span>
+                    <img src="../assets/awk2.png" alt="">
+                </li>
+                <li>Using the awk NR command to keep count of the lines <span class="cmds">awk '{print NR,$1}' data.csv</span>
+                    <img src="../assets/awk3.png" alt="">
+                </li>
+                <li>Using the NF variable, awk prints the last field <span class="cmds">awk '{print $NF}' data.csv</span>
+                    <img src="../assets/awk4.png" alt=>
+                </li>
+                <li>Using the NR command to print specific lines <span class="cmds">awk 'NR==2, NR==5 {print NR, $0}' data.csv</span>
+                    <img src="../assets/awk5.png" alt="">
+                </li>
+                <li>Print specific lines with separator <span class="cmds">awk '{print NR ":" $3}' data.csv</span>
+                    <img src="../assets/awk7.png" alt="">
+                </li>
+                <li>Count the number of lines in a file <span class="cmds">awk 'END {print NR}' data.csv</span></li>
+                <li>Print all the lines that have more, less, or an exact number of characters (>,<,==) <span class="cmds">awk '{length($0) > 15}' data.csv</span>
+                    <img src="../assets/awk6.png" alt="">
+                </li>
+                <p><i>Important note: Awk is extreamly powerfull. If you want to master it, here are some resources:</i>
+                    <ul>
+                        <li>Visit <a href="https://www.geeksforgeeks.org/awk-command-unixlinux-examples/">GeeksforGeeks Awk's page</a></li>
+                        <li>Visit <a href="https://sites.google.com/site/xiangyangsite/home/technical-tips/linux-unix/shell-programming/awk-tips/8-powerful-awk-built-in-variables-fs-ofs-rs-ors-nr-nf-filename-fnr">Daniel Han's Technical Notes</a></li>
+                        <li>Read <a href="https://www.amazon.com/AWK-Programming-Language-Alfred-Aho/dp/020107981X">The Awk Programming language</a></li>
+                        <li>Read <a href="https://www.linuxtechi.com/awk-command-tutorial-with-examples/">Awk Command Tutorial by Pradeep Kumar</a></li>
+                    </ul>
+                </p>
+            </ul>
+
 
             <!--System information-->
 
