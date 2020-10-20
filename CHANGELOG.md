@@ -10,4 +10,8 @@ The following tasks completed:
 0. Adding Linux commands - status - in progress
 1. Adding Docker commands - status - in progress
 
+# Version 1.1.2
+0. Adding Linux commands - status - done
+1. Adding Docker commands - status - done
+
 
