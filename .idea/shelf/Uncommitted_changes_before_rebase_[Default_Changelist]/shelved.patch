@@ -1,0 +1,319 @@
+Index: html/cont.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <meta name=\"description\" content=\"\">\n    <meta name=\"author\" content=\"\">\n    <title>Containerization</title>\n    <!-- Bootstrap core CSS -->\n    <link href=\"../vendor/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">\n    <link href=\"../css/main_other.css\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"../css/footer.css\">\n    <link href=\"https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@300;500&display=swap\" rel=\"stylesheet\">\n</head>\n<body>\n<!-- Navigation -->\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark static-top\">\n    <div class=\"container\">\n        <a class=\"navbar-brand\" href=\"#\">Docker, Linux, and Containerization</a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <span class=\"navbar-toggler-icon\"></span>\n        </button>\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n            <ul class=\"navbar-nav ml-auto\">\n                <li class=\"nav-item active\">\n                    <a class=\"nav-link\" href=\"../index.html\">Home\n                    </a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"../html/cont.html\">Containerization</a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"../html/virt.html\">Virtualization</a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"../html/comp.html\">Comparison</a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"../html/linux.html\">Linux</a>\n                </li>\n                <li class=\"nav-item dropdown\">\n                    <a class=\"nav-link  dropdown-toggle\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\" href=\"html/tut.html\">\n                        Tutorials</a>\n                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\n                        <a class=\"dropdown-item\" href=\"../html/tut1.html\">Web server</a>\n                        <a class=\"dropdown-item\" href=\"../html/tut2.html\">Python App</a>\n                    </div>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"../html/about.html\">About</a>\n                </li>\n            </ul>\n        </div>\n    </div>\n</nav>\n<!-- Page Content -->\n<div class=\"container-fluid\">\n    <!-- start of tittle and sentence container -->\n    <div class=\"row\">\n        <div class=\"col-lg-12 text-center\">\n            <h1 class=\"mt-5\">Containerization </h1>\n            <p class=\"lead font-italic\">Containerization is defined as a form of operating system virtualization, through which applications are run in isolated user spaces called containers, all using the same shared operating system (OS)\n                <a href=\"https://www.citrix.com/glossary/what-is-containerization.html\">\n                    <br><i>-Citrix.com</i></a>\n            </p>\n        </div>\n    </div>\n</div>\n<!-- end of title and sentence container -->\n<div class=\"container-custom-body\">\n    <div class=\"row mt-4\">\n        <!-- start of body of page content -->\n        <div class=\"col-lg\">\n            <p class=\"text-justify container-fluid\"> Containers are an alternate kind of virtualization. Containers give a reliable run-time environment for a single application. At the point when you send an application into a container, the application container is ensured to run a similar way regardless of what server it runs\n                on. By deploying applications utilizing containers, you're ensured the application will run a similar way in the turn of development, testing, and production conditions. Containers don't contain as much overhead as virtual machines, making them simpler to distribute.\n            </p>\n        </div>\n    </div>\n    <!-- start of body of page content -->\n    <div class=\"container-fluid mb-2 mt-4\">\n        <div class=\"row\">\n            <iframe class=\"embed-responsive embed-responsive-16by9 mb-5\" width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/EnJ7qX9fkcU\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n        </div>\n        <!-- /.row -->\n    </div>\n    <!-- /.container -->\n    <div class=\"row\">\n        <!-- 2 paragraphs with image -->\n        <div class=\"col-lg-12\">\n            <p class=\"text-justify container-fluid \">Containers were designed to improve development while packaging up code and all its dependencies so applications run quickly and reliably from one computing environment to another. A container gathers all of the files necessary to run an application—the runtime files, library files, database files, and any operating system–specific files. The container becomes self-sufficient for the application to run; every-thing the application needs is stored within the container.</p>\n           <img class=\"img-fluid center-block d-block mx-auto\" src=\"../assets/containerization-application.png\" height=\"300\">\n            <h2 class=\"text-center mt-4 mb-4\">  Container software </h2>\n            <p class=\"text-justify container-fluid mt-4\">Linux has been in the forefront of container development, making it a popular choice for developers. Well known container software packages are:\n            <ul>\n                <li><b>Docker </b> </li>\n                 <li><b> AWS Fargate </b> </li>\n                <li><b> Google Kubernetes Engine</b> </li>\n        </ul>\n            </p>\n            <h3 class=\"mb-3  mt-4 text-center\"> What is Docker ? </h3>\n            <p class=\"text-center container-fluid\"><i> Nothing beats reading the manual. So if you want to, Docker documentation can be found here : </i> <a href=\"https://docs.docker.com/get-started/overview/\"> Docker</a> </p>\n            <p class=\"text-justify container-fluid mt-4\">Docker is an open platform for developing, shipping, and running applications using OS-level virtualization to deliver software in containers. The isolation and security within Docker containers allows a developer to run many containers simultaneously on a given host. Containers are lightweight because they don’t require the extra capacity of a hypervisor but run directly within the host machine’s kernel. Meaning, a developer can run more containers on a given hardware combination compared to when using virtual machines.  </p>\n        </div>\n    </div>\n    <div class=\"row\">\n        <!-- Advantages of Docker -->\n        <div class=\"col-sm mb-4\">\n            <h3 class=\"text-center mt-4 mb-4\"> Advantages of Using Docker </h3>\n            <p class=\"text-center container-fluid mt-4\"> <i>Fast, consistent delivery of your applications</i> <a href=\"https://docs.docker.com/get-started/overview/\"> - Docker</a> </p>\n            <p class=\"text-justify container-fluid\">The following advantages developers have using Docker goes by the following :\n            <ul>\n                <li> Developers are able to write code locally and share instances of their work with colleagues using containers</li>\n                <li> Applications developed can be pushed into test environments and be executed either using automation or manually </li>\n                <li> When finding bugs, the risk of corrupting the main source files is lowered tremendously. Bugs can be fixed within containers and then redeployed</li>\n        </ul>\n            </p>\n        </div>\n    </div>\n    <div class=\"row\">\n        <!-- Advantages of Docker -->\n        <div class=\"col-sm mb-4\">\n            <h3 class=\"text-center mt-4 mb-4\"> Installation of Docker </h3>\n            <h5 class=\"text-justify container-fluid\">Installation Using Mac </h5>\n            <ul>\n                <li class=\"mb-3\">  First things first, download the mac installer from here: <a href=\"https://desktop.docker.com/mac/stable/Docker.dmg\"> Docker Desktop for Mac </a></li>\n                <li> Next step is to open a Mac terminal and clone a repository to create your first container using the command:<ul> <li class=\"mb-3 cmds\">\"git clone https://github.com/docker/doodle.git\" (Be sure to sign into git)</li></ul></li>\n                <li> Now we're going to build and tag a Docker image using the command: <ul> <li class=\"mb-3 cmds\">\"cd doodle/cheers2019 && docker build -t initlen/cheers2019\" </li> </ul></li>\n                <li> Upon building our image, we want to run the image to assure that the installation was successful. Use the commmand: <ul> <li class=\"mb-3 cmds\"> \"docker run -it --rm initlen/cheers2019\" </ul></li> </li>\n                <li> Lastly, we want to share our image on Docker using: <ul><li class=\"mb-3 cmds\"> \"docker login && docker push initlen/cheers2019\"</li></ul></li>\n            </ul>\n            <h3 class=\"text-center mt-4 mb-4\"> Installation Complete ! </h3>\n            <img class=\"img-fluid center-block d-block mx-auto\" src=\"../assets/docker.gif\">\n            <h6 class=\"text-center mt-4 mb-4\"> Installation on other Operating Systems: </h6>\n            <ul class=\"text-center container-fluid\" style=\"list-style-type: none\">\n                <li><a href=\"https://docs.docker.com/docker-for-windows/install/\"> Windows </a> </li>\n                <li> <a href=\"https://docs.docker.com/engine/install/debian/\"> Debian</a> </li>\n                <li><a href=\"https://docs.docker.com/engine/install/ubuntu/\"> Ubuntu</a></li>\n            </ul>\n            </p>\n        </div>\n    </div>\n\n    <!--Installation of docker-->\n\n    <!--footer -->\n    <!-- Site footer -->\n</div>\n<footer class=\"site-footer\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-sm-8 col-md-8\">\n                <h6>About</h6>\n                <p class=\"text-justify\">This page <i> its our attempt</i>\n                    at explaining the pillars of what makes DevOps. It\n                    starts with the definitions of Virtualization and Containerization alongside\n                    a comparison of both technologies. For containerization, we focus on Docker containers\n                    since they are the primary container technology. We also discus the Linux operating system\n                    and some basic commands to get any new user going. We hope you enjoy reading our tutorials too!\n                    <br><b>Cheers, The Team.</b>\n            </div>\n            <div class=\"col-sm-2 col-md-2\">\n                <h6>Links</h6>\n                <ul class=\"footer-links\">\n                    <li><a href=\"../html/home.html\">Home</a></li>\n                    <li><a href=\"../html/comp.html\">Comparison</a></li>\n                    <li><a href=\"../html/virt.html\">Virtualization</a></li>\n                    <li><a href=\"../html/cont.html\">Containerization</a></li>\n                    <li><a href=\"../html/tut1.html\">Web server</a></li>\n                    <li><a href=\"../html/tut2.html\">Python App</a></li>\n                </ul>\n            </div>\n            <div class=\"col-sm-2 col-md-2 gitubst\">\n                <h6>Github</h6>\n                <ul class=\"footer-links\">\n                    <li><a href=\"https://github.com/ra559\" class=\"footer-links\">Ra559</a></li>\n                    <li><a href=\"https://github.com/lenthedev\" class=\"footer-links\">Lenthedev</a></li>\n                    <li><a href=\"https://github.com/ra559/dlc.git\" class=\"footer-links\">Project</a></li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</footer>\n<!-- end of page content container -->\n<!-- Bootstrap core JavaScript -->\n<script src=\"../vendor/jquery/jquery.slim.min.js\"></script>\n<script src=\"../vendor/bootstrap/js/bootstrap.bundle.min.js\"></script>\n</body>\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- html/cont.html	(revision d52307d750a667725d12b6406ab404277d5a4596)
++++ html/cont.html	(date 1603255081944)
+@@ -88,14 +88,14 @@
+         <!-- 2 paragraphs with image -->
+         <div class="col-lg-12">
+             <p class="text-justify container-fluid ">Containers were designed to improve development while packaging up code and all its dependencies so applications run quickly and reliably from one computing environment to another. A container gathers all of the files necessary to run an application—the runtime files, library files, database files, and any operating system–specific files. The container becomes self-sufficient for the application to run; every-thing the application needs is stored within the container.</p>
+-           <img class="img-fluid center-block d-block mx-auto" src="../assets/containerization-application.png" height="300">
++            <img class="img-fluid center-block d-block mx-auto" src="../assets/containerization-application.png" height="300">
+             <h2 class="text-center mt-4 mb-4">  Container software </h2>
+             <p class="text-justify container-fluid mt-4">Linux has been in the forefront of container development, making it a popular choice for developers. Well known container software packages are:
+             <ul>
+                 <li><b>Docker </b> </li>
+-                 <li><b> AWS Fargate </b> </li>
++                <li><b> AWS Fargate </b> </li>
+                 <li><b> Google Kubernetes Engine</b> </li>
+-        </ul>
++            </ul>
+             </p>
+             <h3 class="mb-3  mt-4 text-center"> What is Docker ? </h3>
+             <p class="text-center container-fluid"><i> Nothing beats reading the manual. So if you want to, Docker documentation can be found here : </i> <a href="https://docs.docker.com/get-started/overview/"> Docker</a> </p>
+@@ -112,7 +112,7 @@
+                 <li> Developers are able to write code locally and share instances of their work with colleagues using containers</li>
+                 <li> Applications developed can be pushed into test environments and be executed either using automation or manually </li>
+                 <li> When finding bugs, the risk of corrupting the main source files is lowered tremendously. Bugs can be fixed within containers and then redeployed</li>
+-        </ul>
++            </ul>
+             </p>
+         </div>
+     </div>
+@@ -123,10 +123,31 @@
+             <h5 class="text-justify container-fluid">Installation Using Mac </h5>
+             <ul>
+                 <li class="mb-3">  First things first, download the mac installer from here: <a href="https://desktop.docker.com/mac/stable/Docker.dmg"> Docker Desktop for Mac </a></li>
+-                <li> Next step is to open a Mac terminal and clone a repository to create your first container using the command:<ul> <li class="mb-3 cmds">"git clone https://github.com/docker/doodle.git" (Be sure to sign into git)</li></ul></li>
+-                <li> Now we're going to build and tag a Docker image using the command: <ul> <li class="mb-3 cmds">"cd doodle/cheers2019 && docker build -t initlen/cheers2019" </li> </ul></li>
+-                <li> Upon building our image, we want to run the image to assure that the installation was successful. Use the commmand: <ul> <li class="mb-3 cmds"> "docker run -it --rm initlen/cheers2019" </ul></li> </li>
+-                <li> Lastly, we want to share our image on Docker using: <ul><li class="mb-3 cmds"> "docker login && docker push initlen/cheers2019"</li></ul></li>
++                <li>
++                    Next step is to open a Mac terminal and clone a repository to create your first container using the command:
++                    <ul>
++                        <li class="mb-3 cmds">"git clone https://github.com/docker/doodle.git" (Be sure to sign into git)</li>
++                    </ul>
++                </li>
++                <li>
++                    Now we're going to build and tag a Docker image using the command:
++                    <ul>
++                        <li class="mb-3 cmds">"cd doodle/cheers2019 && docker build -t initlen/cheers2019" </li>
++                    </ul>
++                </li>
++                <li>
++                    Upon building our image, we want to run the image to assure that the installation was successful. Use the commmand:
++                    <ul>
++                        <li class="mb-3 cmds"> "docker run -it --rm initlen/cheers2019"
++                    </ul>
++                </li>
++                </li>
++                <li>
++                    Lastly, we want to share our image on Docker using:
++                    <ul>
++                        <li class="mb-3 cmds"> "docker login && docker push initlen/cheers2019"</li>
++                    </ul>
++                </li>
+             </ul>
+             <h3 class="text-center mt-4 mb-4"> Installation Complete ! </h3>
+             <img class="img-fluid center-block d-block mx-auto" src="../assets/docker.gif">
+@@ -139,9 +160,7 @@
+             </p>
+         </div>
+     </div>
+-
+     <!--Installation of docker-->
+-
+     <!--footer -->
+     <!-- Site footer -->
+ </div>
+Index: html/tut1.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- html/tut1.html	(revision d52307d750a667725d12b6406ab404277d5a4596)
++++ html/tut1.html	(date 1603255047973)
+@@ -1,0 +1,228 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="utf-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
++    <meta name="description" content="">
++    <meta name="author" content="">
++    <title>Template</title>
++    <!-- Bootstrap core CSS -->
++    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
++    <link href="../css/main_other.css" rel="stylesheet">
++    <link rel="stylesheet" href="../css/footer.css">
++    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@300;500&display=swap" rel="stylesheet">
++</head>
++<body>
++<!-- Navigation -->
++<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
++    <div class="container">
++        <a class="navbar-brand" href="#">Docker, Linux, and Containerization</a>
++        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
++            <span class="navbar-toggler-icon"></span>
++        </button>
++        <div class="collapse navbar-collapse" id="navbarResponsive">
++            <ul class="navbar-nav ml-auto">
++                <li class="nav-item active">
++                    <a class="nav-link" href="../index.html">Home
++                    </a>
++                </li>
++                <li class="nav-item">
++                    <a class="nav-link" href="../html/cont.html">Containerization</a>
++                </li>
++                <li class="nav-item">
++                    <a class="nav-link" href="../html/virt.html">Virtualization</a>
++                </li>
++                <li class="nav-item">
++                    <a class="nav-link" href="../html/comp.html">Comparison</a>
++                </li>
++                <li class="nav-item">
++                    <a class="nav-link" href="../html/linux.html">Linux</a>
++                </li>
++                <li class="nav-item dropdown">
++                    <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="html/tut.html">
++                        Tutorials</a>
++                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
++                        <a class="dropdown-item" href="../html/tut1.html">Web server</a>
++                        <a class="dropdown-item" href="../html/tut2.html">Python App</a>
++                    </div>
++                </li>
++                <li class="nav-item">
++                    <a class="nav-link" href="../html/about.html">About</a>
++                </li>
++            </ul>
++        </div>
++    </div>
++</nav>
++<!-- Page Content -->
++<div class="container">
++    <!-- start of tittle and sentence container -->
++    <div class="row">
++        <div class="col-lg-12 text-center">
++            <h1 class="mt-5">Building an Apache Web Server Using Docker</h1>
++            <p class="lead">A web server is server software, or hardware dedicated to running this software, that can satisfy client requests on the World Wide Web</p>
++        </div>
++    </div>
++</div>
++<!-- end of tittle and sentence container -->
++<div class="container-custom-body">
++    <div class="row">
++        <!-- start of body of page content -->
++        <div class="col-lg-12">
++            <h2 class="text-center"> Environment Requirements </h2>
++            <ol>
++                <li>Install Docker on your computer. </li>
++                <i> Docker supports Mac, Linux and Windows.</i>
++                <li>Pull an Ubuntu image from Dockerhub</li>
++                <i> <a href="https://hub.docker.com"> Here</a></i>
++                <li> Install vim and apache2 within a docker container than save the container.</li>
++                <i>Log in your Ubuntu in Docker container, then install apache2. Finally, save your modification.</i>
++                <li>Share a directory between Docker and host.</li>
++                <i>To read and save data in the host, the shared directory is needed for Docker containers.</i>
++                <li>Use vi to create and edit an index.html file in the shared directory</li>
++                <i>After logging into your Ubuntu, using vi to create and edit a simple index.html file, then open it using your host browser</i>
++            </ol>
++        </div>
++    </div>
++    <!-- start of body of page content -->
++    <div class="row">
++        <!-- start of body of page content -->
++        <div class="col-lg-12">
++            <h2 class="text-center"> Key Steps and Tutorial Resources</h2>
++            <ol>
++                <li>Install Docker Engine</li>
++                <i> <a href="https://docs.docker.com/engine/install/"> Source 1 </a></i>
++                <i> <a href="https://docs.docker.com/get-docker/"> Source 2</a></i>
++                <p class="text-center">Key-step: After the installation, you can run “​docker run hello-world​” to test your installation. Below is a screenshot when you have ran this command successfully on Mac OS.</p>
++                <img class= "img-fluid center-block d-block mx-auto" src="../assets/Oct-20-2020%2022-48-41.gif" height="290">
++                <li class="mt-4">Pull an Ubuntu image from Dockerhub</li>
++                <i> <a href="https://docs.docker.com/engine/reference/commandline/pull/"> Source 3</a></i>
++                <p class="text-center">Key-step 1: ​After logging into Docker, you can run “​docker pull ubuntu”​ in your command line window. </p>
++                <img class= "img-fluid center-block d-block mx-auto"src="../assets/dockerPull.gif" height="200">
++                <p class=" text-center mt-3">Key-step 2: ​Use “docker images” to check existing Docker images on your computer. </p>
++                <img class= "img-fluid center-block d-block mx-auto" src="../assets/dockerImages.gif" height="290">
++                <li class="mt-4"> How To Commit Changes To A Docker Image With Examples</li>
++                <p class="text-center mt-3">
++                    Key-step 1: ​Run the Ubuntu image to start a Docker container, then log into this Ubuntu container:
++                </p>
++                <p class="text-center"> Command:
++                <p class="cmds ">docker run -it ubuntu:latest /bin/bash </p>
++                </p>
++                <br>
++                <img class= "img-fluid center-block d-block mx-auto" src="../assets/dockerRun.gif" height="290">
++                <i class="mt-3 text-center"> The container ID is located to the right of the current user in linux (i.e Root@ “800bbded462a”)</i>
++                <p class="text-center mt-3">
++                    Key-step 2: Install applications in this Ubuntu container.
++                </p>
++                <p class="text-center mt-4 "> Update system using:
++                <p class="cmds mb-4">“​apt-get update -y”​ </p>
++                <img class= "img-fluid center-block d-block mx-auto" src="../assets/getUpdate.gif" height="290">
++                <p class="text-center "> Install apache2 using:
++                <p class="cmds mb-4">“​apt-get install apache2 -y”​</p>
++                <img class= "img-fluid center-block d-block mx-auto" src="../assets/getApache.gif" height="290">
++                <p class="text-center "> Install vim text editor using:
++                <p class="cmds mb-4">“​apt-get install vim -y​"</p>
++                <img class= "img-fluid center-block d-block mx-auto" src="../assets/installVim.gif" height="290">
++                <p class="text-center mt-3">
++                    Key-step 3:​Exit Ubuntu container using the command
++                <p class="cmds"> exit</p>
++                </p>
++                <p class="text-center mt-3">
++                    Key-step 4:​ Commit container to create a new Docker image
++                </p>
++                </p>
++                <p class="text-center mt-3">
++                    1) Check the container using:
++                <p class="cmds">  “​docker ps -a​”</p>
++                <i class="text-center">i.e make sure to copy the id of the given ubuntu container</i>
++                </p>
++                <img class= "img-fluid center-block d-block mx-auto" src="../assets/dockerCopy.gif" height="290">
++                <br>
++                <li>Docker Basics: How to Share Data Between a Docker Container and Host</li>
++                <i> <a href="https://thenewstack.io/docker-basics-how-to-share-data-between-a-docker-container-and-host/"> Source 4 </a></i>
++                <p class="text-center">Using command:
++                <p class="cmds"> “docker run -it -p 127.0.0.1:80:80 -v /Users/lighthisels/Documents:/var/www/html ubuntu-my_apache2 /bin/bash”</p>
++                <h5 class="mb-3">Parameter explanation:</h5>
++                <ul>
++                    <li>1) -it:​ log into an interactive shell</li>
++                    <li> 2) -p:​ expose an port of Docker container.</li>
++                    <li>    3) -v:​ bind a host directory to Docker container. “/Users/lighthisels/Documents” is a
++                        directory of the host computer, and “/var/www/htm” is the default location for the entry webpage of a website. Usually we put “index. Html” is this directory
++                    </li>
++                </ul>
++                .</p>
++                <li> VI Editor in UNIX</li>
++                <i> <a href="https://www.geeksforgeeks.org/vi-editor-unix/"> Source 4 </a></i>
++                <p class="text-center mt-3">
++                    Key step 1: check the present working directory using
++                <p class="cmds"> “pwd”</p>
++                <p class="text-center mt-3">
++                    then go the html directory using:
++                <p class="cmds">  “​cd /var/www/html”​</p>
++                </p>
++                <p class="text-center" >Key step 2: create an “index.html” file using: </p>
++                <p class="cmds">  “​vi index.html​”</p>
++                </p>
++                <figcaption> Press “i” key to edit the new “index. Html” file. You can see “-- INSERT --” in the bottom of the command window, which means you can type html source code now. Try the shortcuts of vi to edit your file.</figcaption>
++                </p>
++                <img class= "img-fluid center-block d-block mx-auto" src="../assets/Oct-21-2020%2000-19-43.gif" height="290">
++                <br>
++                <p class="text-center" >After finishing your “index.html” file, press the “ESC” key of your computer then type “:wq” to write the file and then quit vi.</p>
++                <br>
++                <p class="text-center"> Meanwhile, you can find your “index.html” in your bind directory on your computer.</p>
++                <li>How to use Docker to host a website. </li>
++                <p class="text-center">Key step 1: Start apache service using “​/etc/init.d/apache2 restart​” in your Docker container. </p>
++                <img class= "img-fluid center-block d-block mx-auto " src="../assets/apacheDocker.jpeg" height="290">
++                <br>
++                <br>
++                <h3 class="text-center"> Using a browser of you host computer to access “127.0.0.1”, then you can see your website!</h3>
++                <img class= "img-fluid center-block d-block mx-auto " src="../assets/itWorks.png" height="290">
++                <h3 class="text-center"> Congratulations !</h3>
++                <br>
++                <br>
++            </ol>
++        </div>
++    </div>
++    <!--footer -->
++    <!-- Site footer -->
++</div>
++<footer class="site-footer">
++    <div class="container">
++        <div class="row">
++            <div class="col-sm-8 col-md-8">
++                <h6>About</h6>
++                <p class="text-justify">This page <i> its our attempt</i>
++                    at explaining the pillars of what makes DevOps. It
++                    starts with the definitions of Virtualization and Containerization alongside
++                    a comparison of both technologies. For containerization, we focus on Docker containers
++                    since they are the primary container technology. We also discus the Linux operating system
++                    and some basic commands to get any new user going. We hope you enjoy reading our tutorials too!
++                    <br><b>Cheers, The Team.</b>
++            </div>
++            <div class="col-sm-2 col-md-2">
++                <h6>Links</h6>
++                <ul class="footer-links">
++                    <li><a href="../html/home.html">Home</a></li>
++                    <li><a href="../html/comp.html">Comparison</a></li>
++                    <li><a href="../html/virt.html">Virtualization</a></li>
++                    <li><a href="../html/cont.html">Containerization</a></li>
++                    <li><a href="../html/tut1.html">Web server</a></li>
++                    <li><a href="../html/tut2.html">Python App</a></li>
++                </ul>
++            </div>
++            <div class="col-sm-2 col-md-2 gitubst">
++                <h6>Github</h6>
++                <ul class="footer-links">
++                    <li><a href="https://github.com/ra559" class="footer-links">Ra559</a></li>
++                    <li><a href="https://github.com/lenthedev" class="footer-links">Lenthedev</a></li>
++                    <li><a href="https://github.com/ra559/dlc.git" class="footer-links">Project</a></li>
++                </ul>
++            </div>
++        </div>
++    </div>
++</footer>
++<!-- end of page content container -->
++<!-- Bootstrap core JavaScript -->
++<script src="../vendor/jquery/jquery.slim.min.js"></script>
++<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
++</body>
++</html>
+\ No newline at end of file

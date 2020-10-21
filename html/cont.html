@@ -88,14 +88,14 @@
         <!-- 2 paragraphs with image -->
         <div class="col-lg-12">
             <p class="text-justify container-fluid ">Containers were designed to improve development while packaging up code and all its dependencies so applications run quickly and reliably from one computing environment to another. A container gathers all of the files necessary to run an application—the runtime files, library files, database files, and any operating system–specific files. The container becomes self-sufficient for the application to run; every-thing the application needs is stored within the container.</p>
-           <img class="img-fluid center-block d-block mx-auto" src="../assets/containerization-application.png" height="300">
+            <img class="img-fluid center-block d-block mx-auto" src="../assets/containerization-application.png" height="300">
             <h2 class="text-center mt-4 mb-4">  Container software </h2>
             <p class="text-justify container-fluid mt-4">Linux has been in the forefront of container development, making it a popular choice for developers. Well known container software packages are:
             <ul>
                 <li><b>Docker </b> </li>
-                 <li><b> AWS Fargate </b> </li>
+                <li><b> AWS Fargate </b> </li>
                 <li><b> Google Kubernetes Engine</b> </li>
-        </ul>
+            </ul>
             </p>
             <h3 class="mb-3  mt-4 text-center"> What is Docker ? </h3>
             <p class="text-center container-fluid"><i> Nothing beats reading the manual. So if you want to, Docker documentation can be found here : </i> <a href="https://docs.docker.com/get-started/overview/"> Docker</a> </p>
@@ -112,7 +112,7 @@
                 <li> Developers are able to write code locally and share instances of their work with colleagues using containers</li>
                 <li> Applications developed can be pushed into test environments and be executed either using automation or manually </li>
                 <li> When finding bugs, the risk of corrupting the main source files is lowered tremendously. Bugs can be fixed within containers and then redeployed</li>
-        </ul>
+            </ul>
             </p>
         </div>
     </div>
@@ -123,10 +123,31 @@
             <h5 class="text-justify container-fluid">Installation Using Mac </h5>
             <ul>
                 <li class="mb-3">  First things first, download the mac installer from here: <a href="https://desktop.docker.com/mac/stable/Docker.dmg"> Docker Desktop for Mac </a></li>
-                <li> Next step is to open a Mac terminal and clone a repository to create your first container using the command:<ul> <li class="mb-3 cmds">"git clone https://github.com/docker/doodle.git" (Be sure to sign into git)</li></ul></li>
-                <li> Now we're going to build and tag a Docker image using the command: <ul> <li class="mb-3 cmds">"cd doodle/cheers2019 && docker build -t initlen/cheers2019" </li> </ul></li>
-                <li> Upon building our image, we want to run the image to assure that the installation was successful. Use the commmand: <ul> <li class="mb-3 cmds"> "docker run -it --rm initlen/cheers2019" </ul></li> </li>
-                <li> Lastly, we want to share our image on Docker using: <ul><li class="mb-3 cmds"> "docker login && docker push initlen/cheers2019"</li></ul></li>
+                <li>
+                    Next step is to open a Mac terminal and clone a repository to create your first container using the command:
+                    <ul>
+                        <li class="mb-3 cmds">"git clone https://github.com/docker/doodle.git" (Be sure to sign into git)</li>
+                    </ul>
+                </li>
+                <li>
+                    Now we're going to build and tag a Docker image using the command:
+                    <ul>
+                        <li class="mb-3 cmds">"cd doodle/cheers2019 && docker build -t initlen/cheers2019" </li>
+                    </ul>
+                </li>
+                <li>
+                    Upon building our image, we want to run the image to assure that the installation was successful. Use the commmand:
+                    <ul>
+                        <li class="mb-3 cmds"> "docker run -it --rm initlen/cheers2019"
+                    </ul>
+                </li>
+                </li>
+                <li>
+                    Lastly, we want to share our image on Docker using:
+                    <ul>
+                        <li class="mb-3 cmds"> "docker login && docker push initlen/cheers2019"</li>
+                    </ul>
+                </li>
             </ul>
             <h3 class="text-center mt-4 mb-4"> Installation Complete ! </h3>
             <img class="img-fluid center-block d-block mx-auto" src="../assets/docker.gif">
@@ -139,9 +160,7 @@
             </p>
         </div>
     </div>
-
     <!--Installation of docker-->
-
     <!--footer -->
     <!-- Site footer -->
 </div>
