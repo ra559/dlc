@@ -1,87 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
 
-<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <title>Linux and docker</title>
 
-    <title>Linux and docker</title>
+        <!-- Bootstrap core CSS -->
+        <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/main_other.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link href="https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+    </head>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/main_other.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@300;500&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">Docker, Linux, and Containerization</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="../index.html">Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../html/cont.html">Containerization</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../html/virt.html">Virtualization</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../html/comp.html">Comparison</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../html/linux.html">Linux</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="html/tut.html">
-                        Tutorials</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../html/tut1.html">Web server</a>
-                        <a class="dropdown-item" href="../html/tut2.html">Python App</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../html/about.html">About</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- Page Content -->
-<!-- start of tittle and sentence container -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12 text-center">
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Docker, Linux, and Containerization</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/cont.html">Containerization</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/virt.html">Virtualization</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/comp.html">Comparison</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/linux.html">Linux</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="html/tut.html">
+                                Tutorials</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../html/tut1.html">Web server</a>
+                                <a class="dropdown-item" href="../html/tut2.html">Python App</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/about.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Content -->
+        <!-- start of tittle and sentence container -->
+        <div class="container text-center">
             <h1 class="mt-5">Basic Linux and Docker Commands</h1>
             <p class="lead">
                 <i>Linux is a family of open-source Unix-like operating systems based on the Linux kernel, an operating
-                system kernel first released on September 17, 1991, by Linus Torvalds. Linux is typically packaged in 
-                a Linux distribution. <a href="https://en.wikipedia.org/wiki/Linux">-Wikipedia</a></i>
+                    system kernel first released on September 17, 1991, by Linus Torvalds. Linux is typically packaged in
+                    a Linux distribution. <a href="https://en.wikipedia.org/wiki/Linux">-Wikipedia</a></i>
             </p>
         </div>
-    </div>
-</div>
-
-<!-- end of tittle and sentence container -->
-<div class="container-custom-body">
-    <!-- start of body of page content -->
-    <div class="row">
-        <h2>What is Linux?</h2>
-        <div class="col-lg-12">
+        <!-- end of tittle and sentence container -->
+        <!-- start of body of page content -->
+        <div class="container-custom-body">
+            <!-- start of what is linux section  -->
+            <h2>What is Linux?</h2>
             <p class="text-justify container-fluid">Linux is a kernel. A kernel is the core of the operating system that is responsible for starting/stopping
                 other programs, handling requests for memory, accessing disks, and managing network connections. Abstractly,
                 people use the term Linux to refer to a given Linux Distribution which is defined as a collection of software
@@ -93,205 +83,674 @@
                 (and other Google devices), Amazon fire devices, even Tesla cars use the Linux Kernel in their operating systems.
             </p>
             <img class="rounded mx-auto d-block img-fluid" src="../assets/linux-everywhere.png" alt="linux devices">
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-12">
             <p class="text-justify container-fluid">A complete Linux system package is called a Linux Distribution.
                 There is over 150 Linux distribution available to meet any computing requirement you could have. There
                 are two main Linux distributions that branch out most of the other distros out there: Debian and Redhat.
                 There are other independent distros like Slackware and Arch Linux. The main difference between distribution
                 is the way they package and manage software. There are other differences like the init system. However,
                 since they all share the same Kernel, they have more in common than they differ. Most Linux distributions
-                follow the Filesystem Hierarchy Standard and pack the Bash shell as the default shell. </p>
-        </div>
-    </div>
-
-
-    <div class="row">
-        <h2>Basic Linux Commands</h2>
-        <!-- Moving around the filesystem -->
-        <div class="col-lg-12">
+                follow the Filesystem Hierarchy Standard and pack the Bash shell as the default shell.
+            </p>
+            <!-- end of what is linux section -->
+            <!-- start of commands section -->
+            <h2>Basic Linux Commands</h2>
+            <!--Moving around the filesystem-->
             <h3>Moving Around The filesystem</h3>
-                <p class="text-justify container-fluid">A filesystem defines the way files are stored and organized in an operating system. Linux, like Unix, has a
-                root directory from where all the files are arranged. Linux follows the Filesystem Hierarchy Standard (FHS)
-                which specifies requirements and guidelines for file and directory placement in UNIX-like operating systems.
-                </p>
-                <img class="rounded mx-auto d-block img-fluid" src="../assets/linuxfilesystem.png" alt="">
-                <div class="row">
-                    <div class="col-sm"><!-- PDW + CD Commands column -->
-                        <h4>pwd</h4>
-                        <div class="container-cmds">
-                            <p>The pwd is used for printing the present working directory. To use the pwd command use the following
-                                formula</p>
-                            <p class="cmds">pwd</p>
-                            <p><b>Example:</b></p>
-                            <li>Display where you are</li>
-                            <p class="cmds">pwd</p>
-                        </div>
-                        <h4>cd</h4>
-                        <div class="container-cmds">
-                            <p>The cd command is used for changing directories. The cd command takes for argument a destination
-                                in the form of an absolute path or relative path.
-                            <li>Absolute path: starts at the root of the filesystem: <span class="cmds">/home/user/Downloads/games</span></li>
-                            <li>Starts with a subdirectory of the present working directory: <span class="cmds">Downloads/games</span></li>
-                            To use the cd command use the following formula:</p>
-                            <p class="cmds">cd + destination</p>
-                            <p><b>Examples:</b></p>
-                            <p></p>
-                        </div>
-                    </div>
+            <p class="text-justify container-fluid">A filesystem defines the way files are stored and organized
+                in an operating system. Linux, like Unix, has a
+                root directory from where all the files are arranged. Linux follows the Filesystem Hierarchy
+                Standard (FHS) which specifies requirements and guidelines for file and directory placement in UNIX-like
+                operating systems.
+            </p>
+            <img class="rounded mx-auto d-block img-fluid" src="../assets/linuxfilesystem.png">
+            <p class="text-justify container-fluid">Before you start leaning the Linux Command Linux Interface (CLI), it is important to understand the concept
+            of absolute and relative paths. A file path is a unique location to a file or a folder in a file system. An
+            absolute path is defined as the specific location of a file starting at the root of the file system. A relative path on
+            the other hand, starts with a directory that is related to the present working directory. to better ilustrate
+            this concept, lets asume that you want to open a file located in the Downloads directory. The file name is
+            games.txt. The absolute path of games.txt is: <span class="cmds">/home/user/Downloads/games.txt</span>. If your
+            present working directory is your home directory, the the relative path to games.txt is: <span>Downloads/games.txt</span>.
+            Absolute paths can be used anywhere in the filesystem while relative path only work from the directory that they are relative to.</p>
 
-                    <div class="col-sm"><!-- ls + tree Commands column -->
-                        <h4>ls</h4>
-                        <div class="container-cmds">
-                            <p>The ls command is used for listing all the files in a given directory. To use the ls commmand
-                            use the following formula</p>
-                            <p class="cmds">ls + option + directory or file to list</p>
-                            <p>When no directory is given, the ls command will list the present working directory. In Linux,
-                            a period at the beginning of a file name indicates a hidden file; ex: .bashrc</p>
-                            <p><b>Examples:</b></p>
-                            <p></p>
-                        </div>
-                        <h4>tree</h4>
-                        <div class="container-cmds">
-                            <p>The The tree is used to recursively list or display the content of a directory in a tree-like format.
-                            The tree program is not an internal command and must be installed with the package manager of your distribution.
-                            To install tree in Ubuntu/Debian use: <span class="cmds">sudo apt install tree -y</span> To use the
-                            tree command use the following formula: </p>
-                            <p class="cmds">tree + option + directory to list</p>
-                            <p>When no directory is given, the tree command will list the present working directory.</p>
-                            <p><b>Examples:</b></p>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-        </div>
-
-
-
-        <!-- Managing files and directories -->
-        <div class="col-lg-12">
+            <p class="text-justify container-fluid">To navigate the filesystem from the CLI all you need to know are 3 commands:
+            pwd, cd, and ls. The <span class="cmds">pwd</span> command displays the present working directory. Pwd is used to know where you are at any time.
+            The cd command is used to change from one directory to another. Cd is the main movement command since it allows you to change your present working directory.
+            The cd command can use absolute path, regular path, or no path at all if the user wants to go to their home directory. Sometimes you want to see
+            whats inside a particular directory. This is called listing the content of a directory. Other times you want to see some information about a file or
+            a directory such as the size of the file or who owns it. For all of these scenarios we use the <span class="cmds">ls</span> command.</p>
+            <h5 class="container-fluid text-justify">PWD Examples:</h5>
+            <ul>
+                <li>Display where you are: <span class="cmds">pwd</span></li>
+            </ul>
+            <h5 class="container-fluid text-justify"> CD Examples:</h5>
+            <ul>
+                <li>Change your present working directory to another: <span class="cmds">cd /etc/rules.d<</span></li>
+                <li>Change directory to the previous present working directory.<span class="cmds">cd -</span></li>
+                <li>Change directory to 1 directory back in the directory tree.<span class="cmds">cd ../</span></li>
+                <li>Change directory to 3 directory back in the directory tree<span class="cmds">cd ../../../</span></li>
+                <li>Change directory to your home directory</li>
+                Option 1: <span class="cmds">cd</span>
+                Option 2: <span class="cmds">cd ~</span>
+                Option 3: <span class="cmds">cd $HOME</span>
+            </ul>
+            <h5 class="container-fluid text-justify">LS Examples:</h5>
+            <ul>
+                <li>Long list all the files including hidden files.
+                <span class="cmds">ls -la ~/Downloads/</span></li>
+                <li>List all the files recursivel
+                <span class="cmds">ls -R ~/Downloads/</span></li>
+                <li>List all the files in a given directory sorted by last modified.
+                <span class="cmds">ls -t ~/Downloads/</span></li>
+                <li>List all the files in a given directory sorted by file size
+                <span class="cmds">ls -S ~/Documents</span></li>
+                <li>List all the files in a given directory sorted by extension
+                <span class="cmds">ls -X ~/Documents</span></li>
+                <li>List all the files in a given directory sorted by name in reverse order
+                <span class="cmds">ls -R ~/Documents </span></li>
+                <li>List all the options of the ls command
+                <span class="cmds">ls --help</span></li>
+            </ul>
+            <!--Managing files and directories-->
             <h3>Managing files and directories</h3>
-            <div class="row">
-                <div class="col-sm"> <!-- mkdir -->
-                    <h4>mkdir</h4>
-                        <div class="container-cmds">
-                            <p><b>Examples:</b></p>
-                            <p></p></div>
-                    <h4>rmdir</h4>
-                        <div class="container-cmds">
-                            <p><b>Examples:</b></p>
-                            <p></p>
-                        </div>
-                    <h4>mv</h4>
-                        <div class="container-cmds">
-                            <p><b>Examples:</b></p>
-                            <p></p>
-                        </div>
-                </div>
+            <p class="container-fluid text-justify">Now that you know how to move around the filesystem, it is time to learn
+            how to manage files. File management in the CLI involves creating files/directories, moving and copying files, and
+            removing files and directories.</p>
+            <!--MKDIR-->
+            <p class="container-fluid text-justify"><span class="cmds">mkdir</span> is used for creating a single directory or multiple directories.To create a directory with mkdir type: mkdir + the name of the directory.
+                To create multiple directories, separate each directory name with a space.
+                You can create directories in the present working directory or in a different directory by using an absolute path or relative path.
+                You can create a directory with a space in its name using the escape character (\) or by surrounding the name in quotation marks (‘ ‘ or “ ” ).
+                If you try to create a directory that already exists, you will get an error notifying you that the file already exists.
+            </p>
+            <h5 class="container-fluid text-justify">MKDIR Examples:</h5>
+            <ul>
+                <li>Create a directory in the present working directory
+                <span class="cmds">mkdir wallpapers</span></li>
+                <li>Create a directory in a different directory using relative path
+                <span class="cmds">mkdir wallpapers/ocean</span></li>
+                <li>Create a directory in a different directory using absolute path
+                <span class="cmds">mkdir ~/wallpapers/forest</span></li>
+                <li>Create a directory with a space in the name
+                <span class="cmds">mkdir wallpapers/new\ cars</span>
+                <span class="cmds">mkdir wallpapers/’cities usa’</span></li>
+                <li>Create a directory with a single quote in the name
+                <span class="cmds">mkdir wallpapers/”majora's mask”</span></li>
+                <li>Create multiple directories
+                <span class="cmds">mkdir wallpapers/dir1 wallpapers/dir2 wallpapers/dir3</span></li>
+                <li>Create a directory with other directories at the same time
+                <span class="cmds">mkdir -p wallpapers_others/cars</span></li>
+            </ul>
+            <!--TOUCH-->
+            <p class="container-fluid text-justify">To create files we use the touch command. Although the touch program
+            was not designed for creating files (in fact it is an unintended result) it was designed for updating files accesses time.
+            </p>
+            <h5 class="container-fluid text-justify">TOUCH Examples:</h5>
+            <ul>
+                <li>To create a file called list <span class="cmds">touch list</span></li>
+                <li>To create several files: <span class="cmds">touch list_of_cars.txt script.py names.csv</span></li>
+                <li>To create a file using absolute path: <span class="cmds">touch ~/Downloads/games.txt</span></li>
+                <li>To create a file using relative path (assuming you pwd is you home directory): <span class="cmds">touch Downloads/games2.txt</span></li>
+                <li>To create a file with a space in its name: <span class="cmds">touch “list of foods.txt”</span></li>
+            </ul>
+            <!--RM-->
+            <p class="container-fluid text-justify">To remove files we use the rm command. Rm by default does not removes
+                directories. To remove a directory use rm with the -r option. In Linux and other Nix systems you cannot remove non empty directories.
+                To remove empty directories use the rmdir command. To remove non-empty directories use rm -r + directory name or directory absolute path.
+            </p>
+            <h5 class="container-fluid text-justify">RM Examples:</h5>
+            <ul>
+                <li>Remove a file <span class="cmds">rm list</span>
+                <li>Remove a file and prompt confirmation before removal <span class="cmds">rm -i list</span></li>
+                <li>Remove all the files inside a directory and prompt before removing more than than 3 files <span class="cmds">rm -I Downloads/games/*</span></li>
+                <li>Remove an empty directory <span class="cmds">rmdir Downloads/games</span></li>
+                <li>Remove an non-empty directory <span class="cmds">rm -r Downloads/games</span></li>
+            </ul>
+            <p class="container-fluid text-justify">Part of working with files is moving them around. For this purpose we use the <span class="cmds">mv</span> commad.
+            Also, the mv command is used for renaming files. When you want to move a file from one place to another, you use the
+            mv command with the following formula: mv + source file(s) + destination. When you want to rename a file, you can use the same formula.
+            Mv can move and name files at the same time.</p>
+            <h4>Mv Examples (Moving files and directories)</h4>
+            <ul>
+                <li>To move a file from a directory to another using relative path <span class="cmds">mv Downloads/homework.pdf	Documents/</span></li>
+                <li>To move a directory from one directory to another using absolute path <span class="cmds">sudo mv ~/Downloads/theme /usr/share/themes</span></li>
+                <li>To move multiple directories/files to a different directory <span class="cmds">mv games/ wallpapers/ rockmusic/ /media/student/flashdrive/</span></li>
+            </ul>
+            <h5 class="container-fluid text-justify">MV Examples (renaming files)</h5>
+            <ul>
+                <li>To rename a file <span class="cmds">mv homework.docx cis106homework.docx</span></li>
+                <li>To rename a file using absolute path <span class="cmds"> mv ~/Downloads/homework.docx ~/Downloads/cis106homework.docx</span></li>
+                <li>To move and rename a file in the same command <span class="cmds">mv Downloads/cis106homework.docx Documents/new_cis106homework.docx</span></li>
 
+            </ul>
+            <p class="text-justify container-fluid">What if you want to copy the files instead of moving them? in this case
+            we use the <span class="cmds">cp</span> command. The cp command follows the same formula as the mv command:
+            cp + files to copy + destination. When moving directories cp commands requires the  -r or -R argument.</p>
+            <h5 class="container-fluid text-justify">CP examples:</h5>
+            <ul>
+                <li>To copy a file
+                <span class="cmds">cp Downloads/wallpapers.zip Pictures/</span></li>
+                <li>To copy a directory with absolute path
+                <span class="cmds">cp -r ~/Downloads/wallpapers ~/Pictures/</span></li>
+                <li>To copy the content of a directory to another directory
+                <span class="cmds">cp Downloads/wallpapers/* ~/Pictures/</span></li>
+                <li>To copy multiple files in a single command
+                <span class="cmds">sudo cp -r script.sh program.py home.html assets/ /var/www/html/</span></li>
+            </ul>
+            <!--Working with text files-->
+            <h3>Working with text files</h3>
+            <p class="container-fluid text-justify">Working on the CLI involves more than just shuffling files around.
+            In Linux, everything can be done on the command line and one of the greatest strength of the CLI is its large
+                amount of commands that can be used to work with text files.
+            </p>
+            <h4>The Cat Command</h4>
+            <p class="container-fluid text-justify">The <span class="cmds">cat</span> command is short for concatenate and it is used for concatenating files and displaying the content of a text file.
+                To use the cat command follow this formula: <span class="cmds">cat + option + filename</span></p>
+            <h5 class="container-fluid text-justify">CAT Examples:</h5>
+            <ul>
+                <li>Display the contents of a file <span class="cmds">cat file.txt</span></li>
+                <li>Concatenate several files <span class="cmds">cat ~/Documents/file1.txt ~/Downloads/file2.txt</span></li>
+                <li>Display the contents of a file with line numbers <span class="cmds">cat -n /proc/meminfo</span></li>
+                <li>Create a file <span class="cmds">cat > newfile.txt</span></li>
+                <li>Display the content of a file with $ to indicate the end of each line <span class="cmds">cat -E /etc/passwd</span></li>
+            </ul>
+            <h4>The Tac Command</h4>
+            <p class="container-fluid text-justify">The tac command is used for concatenating and displaying the content of a file in reverse order.
+            To use the tac command, use the following formula: <span class="cmds">tac + option + file name</span></p>
+            <ul>
+                <li>Display the content of a file in reverse order <span class="cmds">tac /etc/passwd</span></li>
+                <li>Separate the contents of a file using a string inside the file <span class="cmds">tac -s file.txt “ip”</span></li>
+                <li>Concatenate several files <span class="cmds">tac ~/Documents/file1.txt ~/Downloads/file2.txt</span></li>
+            </ul>
+            <h4>The more and less commands</h4>
+            <p class="container-fluid text-justify">Both more and less are pager programs. A pager program is used for loading the output of a large program or a text file one page at the time.
+            To use the more use the following program: <span class="cmds">more + option + file or command output</span> To use the less command
+            use the following formula: <span class="cmds">less + file </span></p>
+            <p class="container-fluid text-justify">Examples of the more and less command</p>
+            <h5 class="container-fluid text-justify">TAC Examples:</h5>
+            <ul>
+                <li>load a text file <span class="cmds">more program.py</span></li>
+                <li>Pass the output of a command <span class="cmds">lshw | more</span></li>
+                <li>Open multiple files (use :n for the next file or :p for the previous file) <span class="cmds">more file*</span></li>
+                <li>Open a file at the first of the occurrence a string <span class="cmds">more +/^system file.txt</span></li>
+                <li>Open a file at a given line number <span class="cmds">more +50 access.log</span></li>
+                <li>Load a text file <span class="cmds">less program.py</span></li>
+            </ul>
 
+            <h4>The Head Command</h4>
+            <p class="container-fluid text-justify">Displays a given number of lines or bytes of a file. If no option given
+                it displays the fist 10 lines of a file. To use the head command, use the following formula
+            <span class="cmds">head + option + file</span></p>
+            <h5 class="container-fluid text-justify">HEAD Examples:</h5>
+            <ul>
+                <li>Print the first 10 lines of a file <span class="cmds">head /etc/passwd</span></li>
+                <li>Prints the first n number of a file <span class="cmds"> head -5 /etc/passwd</span></li>
+                <li>Prints the n number of given bytes of a file <span class="cmds"> head -c 100 /etc/passwd</span></li>
+                <li>Suppress the filename when more than one file is given <span class="cmds">head -q /etc/passdwd file.txt</span></li>
+            </ul>
+            <h4>The Tail Command</h4>
+            <p class="container-fluid text-justify">Displays the last 10 lines of a given file.</p>
+            <h5 class="container-fluid text-justify">TAIL Examples:</h5>
+            <ul>
+                <li>Print the last 10 lines of a file <span class="cmds">tail /etc/passwd</span></li>
+                <li>Prints the last n number of a file <span class="cmds">tail -5 /etc/passwd</span></li>
+                <li>Prints the n number of given bytes of a file <span class="cmds">tail -c 100 /etc/passwd</span></li>
+                <li>Suppress the filename when more than one file is given <span class="cmds">tail -q /etc/passwd file.txt</span></li>
+                <li>Display appended data <span class="cmds">tail -f access.log</span></li>
+            </ul>
+            <h4>The Cut Command</h4>
+            <p class="container-fluid text-justify">The cut command is used to extract a specific section of each line of a file and display it to the screen.
+            To use the cut command, use the following formula: <span class="cmds">cut option + file</span></p>
+            <h5 class="container-fluid text-justify">CUT Examples:1</h5>
+            <ul>
+                <li>Cut n number of bytes per line (1 byte = 1 character). This command will cut byte 1 2 3 4 5 of each line <span class="cmds"> cut -b 1,2,3,4,5 usernames.txt </span></li>
+                <li>Cut a range of bytes per line <span class="cmds"> cut -b 1-5 usernames.txt</span></li>
+                <li>Cut a by characters. Use this command to ensure that cut uses characters. There instances in which a
+                character is more than 1 byte long. This depends on the character encoding used to translate between
+                characters and bytes. For example, UTF-32 represents each character with 4 bytes, whereas, UTF-8 uses
+                between 1 and 4 bytes. <span class="cmds"> cut -c 1,2,3 ipaddresses.txt</span></li>
+                <li>Cut a file using a delimiter like a comma or period. For example, the /etc/passwd file is separated by
+                ":" the following command will display a list of users in your system. <span class="cmds"> Cut -d ':' -f 1 /etc/passwd</span></li>
+                <li>Cut a file using a delimiter but changing the delimiter in the output. For example, the following command '
+                will list all the users in your system and their login shell. <span class="cmds"> cut -d ':' -s -f1,7 --output-delimiter="=" /etc/passwd</span></li>
+                <li>Cut a file using a new line as a delimiter. For example, the following command will display all the
+                    users and their hashed password each in a new line. <span class="cmds"> sudo cut -d ':' -f1,2 --output-delimiter=$'\n' /etc/shadow-</span></li>
+                <li>Cut a file excluding a given field <span class="cmds">cut -d ',' --complement -s -f3 users.txt</span></li>
+            </ul>
+            <h4>The paste command</h4>
+            <p class="container-fluid text-justify">The paste command is used to joing files horizontally in columns.
+            To use the paste command use the following formula: <span class="cmds">paste option + files</span></p>
+            <h5 class="container-fluid text-justify"> PASTE Examples:</h5>
+            <ul>
+                <li>Merge files with paste <span class="cmds">paste users.txt ip.txt</span></li>
+                <li>Merge files using a different delimiter <span class="cmds">paste -d ">"users.txt ip.txt</span></li>
+                <li>Merge files using more than one delimiter <span class="cmds">paste -d ":-" users.txt ip.txt country.txt</span></li>
+            </ul>
+            <h4>The sort command</h4>
+            <p class="text-justify container-fluid">The sort command is used for arranging a text file in a particular order. The sort command is used for arranging a text file in a particular order. The sort command arranges a file line by line. Sorting works in the following way:
+                <ul>
+                    <li>Lines starting with a number appear first</li>
+                    <li>Lines starting with a letter are sorted alphabetically in ascending order</li>
+                    <li>Lines starting with a lowercase letter appear before uppercase</li>
+                </ul>
+            To use sort command, follow this formula: <span class="cmds"> sort + option + file</span>
+            </p>
+            <p>Examples of the sort command</p>
+            <ul>
+                <li>sort a file and save the output to a new file <span class="cmds">sort -o usersSorted.txt users.txt</span></li>
+                <li>Sort in reverse order <span class="cmds">sort -r users.txt</span></li>
+                <li>Sort a file with numeric data <span class="cmds">sort -n numbers.txt</span></li>
+                <li>Sort a file with numeric data in reverse order <span class="cmds">sort -nr numbers.txt</span></li>
+                <li>Sort by column number <span class="cmds">sort -k 2 users.txt</span></li>
+                <li>Check if a file is sorted <span class="cmds">sort -c users.txt</span></li>
+                <li>Sort and remove duplicated entries <span class="cmds">sort -u users.txt</span></li>
+            </ul>
+            <h4>The wc command</h4>
+            <p class="container-fluid text-justify">The wc command is used for printing the number of lines, characters, and bytes in a file.
+            To use the wc command,follow this formula: <span class="cmds">wc option + file</span></p>
+            <h5 class="container-fluid text-justify">WC Examples:</h5>
+            <ul>
+                <li>Display the number of bytes in a file <span class="cmds">wc -c file.txt</span></li>
+                <li>Display the number of characters in a file <span class="cmds">wc -m file.txt</span></li>
+                <li>Display the number of lines in a file <span class="cmds">wc -l file.txt</span></li>
+                <li>Display the number of words in a file <span class="cmds">wc -w file.txt</span></li>
 
-
-                <div class="col-sm"> <!-- touch -->
-                    <h4>touch</h4>
-                        <div class="container-cmds">
-                            <p><b>Examples:</b></p>
-                            <p></p></div>
-                    <h4>rm</h4>
-                        <div class="container-cmds">
-                            <p><b>Examples:</b></p>
-                            <p></p>
-                        </div>
-                    <h4>cp</h4>
-                        <div class="container-cmds">
-                            <p><b>Examples:</b></p>
-                            <p></p>
-                        </div>
-                </div>
-
-
+            </ul>
+            <h4>The tr command</h4>
+            <p class="container-fluid text-justify">The tr command is used for translating or deleting characters from standard output. To use the tr command
+            use the following formula: <span class="cmds">command output | + tr + option + set + set</span></p>
+            <div class="container text-justify">
+                <h5><b>Regular Expressions character classes:</b></h5>
+                <table class="table-responsive table-striped">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th>POSIX class</th>
+                        <th>Represents</th>
+                        <th>Means</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>[:upper:]</td>
+                        <td>[A-Z]</td>
+                        <td>Upper case letters</td>
+                    </tr>
+                    <tr>
+                        <td>[:lower:]</td>
+                        <td>[a-z]</td>
+                        <td>Lower case letters</td>
+                    </tr>
+                    <tr>
+                        <td>[:alpha:]</td>
+                        <td>[A-Za-z]</td>
+                        <td>Upper and Lower case letters</td>
+                    </tr>
+                    <tr>
+                        <td>[:alnum:]</td>
+                        <td>[A-Za-z0-9]</td>
+                        <td>Lower case, upper case, and digits</td>
+                    </tr>
+                    <tr>
+                        <td>[:digit:]</td>
+                        <td>[0-9]</td>
+                        <td>digits</td>
+                    </tr>
+                    <tr>
+                        <td>[:xdigit:]</td>
+                        <td>[0-9A-Fa-f]</td>
+                        <td>hexadecimal digits</td>
+                    </tr>
+                    <tr>
+                        <td>[:punct:]</td>
+                        <td>[.,!?:...]</td>
+                        <td>puctuation</td>
+                    </tr>
+                    <tr>
+                        <td>[:blank:]</td>
+                        <td>[\t]</td>
+                        <td>space and tabs</td>
+                    </tr>
+                    <tr>
+                        <td>[:cntrl:]</td>
+                        <td>n/a</td>
+                        <td>control characters</td>
+                    </tr>
+                    <tr>
+                        <td>[:graph:]</td>
+                        <td>[^\t\n\r\g\v]</td>
+                        <td>printed characters without spaces</td>
+                    </tr>
+                    <tr>
+                        <td>[:print:]</td>
+                        <td>[^\t\n\r\g\v]</td>
+                        <td>printed characters including spaces</td>
+                    </tr>
+                    <tr>
+                        <td>[:space:]</td>
+                        <td>[ \t\n\r\g\v]</td>
+                        <td>whitespace characters</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
-        </div>
+            <h5 class="text-justify container-fluid">TR Examples:</h5>
+            <ul>
+                <li>Translate . to , (or any other character) <span class="cmds">cat file.txt | tr '.' ',' file.txt</span></li>
+                <li>Translate white space into tabs <span class="cmds">cat file.py | tr [:space:] '\t'</span></li>
+                <li>Translate tabs into spaces <span class="cmds">cat file.py | tr -s "[:space:]" ' '</span></li>
+                <li>Delete specified character (delete all uppercase letters) <span class="cmds">cat file.txt | tr -d '[:upper:]'</span></li>
+                <li>Delete all characters except upper case letters <span class="cmds">cat file | tr -cd "[:lower:]"</span></li>
+                <li>Convert all lower case characters to upper case characters  <span class="cmds">cat file.txt | tr "[a-z]" "[A-Z]"</span> or use: <span class="cmds">
+                    cat file.txt | tr "[:lower:]" "[:upper:]"
+                </span></li>
+            </ul>
+            <h4>The diff command</h4>
+            <p class="container-fluid text-justify">The diff command comparares files and display the differences between them. To use the
+            diff command, follow this formula: <span class="cmds">diff option + file + file</span></p>
+            <h5 class="text-justify container-fluid">DIFF Examples:</h5>
+            <ul>
+                <li>Display the difference between two files<span class="cmds">diff file1 file2</span></li>
+                <li>Display the difference between two files only if the files are different <span class="cmds">diff -q file1 file2</span></li>
+                <li>Display the difference between two files in column format<span class="cmds">diff -y file1 and file2</span></li>
+            </ul>
+            <h4>The find command</h4>
+            <p class="container-fluid text-justify">The find command is used for finding files in your system. To use the find command,
+            follow this formula: <span class="cmds">find + start directory + option + file name to search</span></p>
+            <h5 class="text-justify container-fluid">FIND Examples:</h5>
+            <ul>
+                <li>Find a file in the home directory <span class="cmds">find /home/$USER -name "program.py"</span></li>
+                <li>Find a file in the home directory ignoring case sensitivity <span class="cmds">find /home/$USER -iname "program.py"</span></li>
+                <li>Find a directory <span class="cmds">find / -type d -name "games"</span></li>
+                <li>Find files using their permissions<span class="cmds">find / -type f -perm 644</span></li>
+                <li>Find and remove files <span class="cmds">find /home/$USER -type f -name "*.docx" -exec rm -f {} \;</span></li>
+                <li>Find empty files <span class="cmds">find /home/$USER -type -f -empty</span></li>
+                <li>Find empty directories <span class="cmds">find /home/$USER -type -d -empty</span></li>
+                <li>Find hidden files <span class="cmds">find / -type -f name ".*"</span></li>
+                <li>Find all files modified in last 7 days <span class="cmds">find / -atime 7</span></li>
+                <li>Find all files modifed more than a week ago and less than a month <span class="cmds">find / -mtime +7 -mtime -30</span></li>
+                <li>Find all files which size are 1GB <span class="cmds">find / -size 1024M</span></li>
+            </ul>
+            <h4>The sed command</h4>
+            <p class="text-justify container-fluid">The sed command is stream editor used for filtering and transforming text.
+            To use the sed command, follow this formula: <span class="cmds">sed + option + sed command + file</span></p>
+            <h5 class="container-fluid text-justify">SED Examples:</h5>
+            <ul>
+                <li>Substituting a string with another <span class="cmds">sed 's/old/new/' file.txt</span></li>
+                <li>Substituting n position of a string with another <span class="cmds">sed 's/old/new/5' file.txt</span></li>
+                <li>Substituting all occurrences of a string with another <span class="cmds">sed 's/old/new/g' file.txt</span></li>
+                <li>Substituting all occurrences of a string with another after a given position <span class="cmds">sed 's/old/new/5g' file.txt</span></li>
+                <li>Substituting a string with another on a specific line <span class="cmds">sed '5 s/old/new/' file.txt</span></li>
+                <li>Substituting a string with another on a range of lines <span class="cmds">$sed '1,5 s/old/new/' file.txt</span></li>
+                <li>Delete a specific line of a file <span class="cmds">sed '2d' file.txt</span></li>
+                <li>Delete a range of lines <span class="cmds">sed '3,8d' file.txt</span></li>
+                <li>Display a range of lines <span class="cmds">sed -n 8,12p file.txt</span></li>
+                <li>Display all the content of a file except a range of lines <span class="cmds">sed -n 8,12d file.txt</span></li>
+                <li>Display all the content of a file except the last line <span class="cmds">sed $d file.txt</span></li>
+                <li>Add an empty line after every non blank line <span class="cmds">sed G file.txt</span></li>
+                <li>Use multiple sed commands <span class="cmds">sed -e 's/old/new/g' -e 's/windows/ubuntu/' file.txt</span></li>
+                <li>Delete all the lines that start with a given string and ends in another given string <span class="cmds">sed -e 's/start.*end//g' file.txt</span></li>
+                <li>Removing all commented lines and empty lines on a given script <span class="cmds">sed -e 's/#.*//;/^$/d' file.sh</span></li>
+                <li>Removing comments only <span class="cmds">sed -e 's/#.*//' file.sh</span></li>
+            </ul>
+            <h4>The Awk command:</h4>
+            <p class="container-fluid text-justify">Awk is a scripting language used for processing and displaying text.
+                Awk can work with a text file or from standard output. Awk was created in Bell Labs during the 70s by Alfred Aho,
+                Peter Weinberger, and Brian Kernighan and its name comes from its authors' initials. There are several
+                implementations of Awk: nawk, mawk, gawk, and busybox.
+                <br>From Stackoverflow by the user: <a href="https://unix.stackexchange.com/users/885/gilles-so-stop-being-evil">Gilles 'SO- stop being evil'.</a>
+                <br>
+                <ul>
+                AWK is a programming language. There are several implementations of AWK (mostly in the form of interpreters).
+            AWK has been codified in POSIX. The main implementations in use today are:
+                    <li>nawk (“new awk”, an evolution of oawk, the original UNIX implementation), used on *BSD and widely available on Linux;</li>
+                    <li>mawk, a fast implementation that mostly sticks to standard features;</li>
+                    <li>gawk, the GNU implementation, with many extensions;</li>
+                    <li>the Busybox (small, intended for embedded systems, not many features).</li>
+                    If you only care about standard features, call awk, which may be Gawk or nawk or mawk or some other implementation. If you want the features in GNU awk, use gawk or Perl or Python.
+                 </ul>
+            To use awk, follow this formula, <span class="cmds">awk + options +a ction with or without selection +file or standard output redirection +file to save (optional)</span>
+            </p>
+            <h5 class="text-justify container-fluid">AWK Examples:</h5>
+            <ul>
+                <li>Print all lines that contain a given string <span class="cmds">awk '/student/{print}' data.csv</span>
+                    <img class="rounded mx-auto d-block img-fluid" src="../assets/awk1.png" alt="">
+                </li>
+                <li>Awk can split a file into fields. It does it using field variables represented by their position in
+                    the line. For example, the sentence "Bill plays pong" will be split in $1="Bill" $2="plays" $3="pong".
+                    <span class="cmds">awk '{print $1,$3}' data.csv</span>
+                    <img class="rounded mx-auto d-block img-fluid" src="../assets/awk2.png" alt="">
+                </li>
+                <li>Using the awk NR command to keep count of the lines <span class="cmds">awk '{print NR,$1}' data.csv</span>
+                    <img class="rounded mx-auto d-block img-fluid" src="../assets/awk3.png" alt="">
+                </li>
+                <li>Using the NF variable, awk prints the last field <span class="cmds">awk '{print $NF}' data.csv</span>
+                    <img class="rounded mx-auto d-block img-fluid" src="../assets/awk4.png" alt=>
+                </li>
+                <li>Using the NR command to print specific lines <span class="cmds">awk 'NR==2, NR==5 {print NR, $0}' data.csv</span>
+                    <img class="rounded mx-auto d-block img-fluid" src="../assets/awk5.png" alt="">
+                </li>
+                <li>Print specific lines with separator <span class="cmds">awk '{print NR ":" $3}' data.csv</span>
+                    <img class="rounded mx-auto d-block img-fluid" src="../assets/awk7.png" alt="">
+                </li>
+                <li>Count the number of lines in a file <span class="cmds">awk 'END {print NR}' data.csv</span></li>
+                <li>Print all the lines that have more, less, or an exact number of characters (>,<,==) <span class="cmds">awk '{length($0) > 15}' data.csv</span>
+                    <img class="rounded mx-auto d-block img-fluid" src="../assets/awk6.png" alt="">
+                </li>
+                <p><i>Important note: Awk is extremely powerful. If you want to master it, here are some resources:</i>
+                    <ul>
+                        <li>Visit <a href="https://www.geeksforgeeks.org/awk-command-unixlinux-examples/">GeeksforGeeks Awk's page</a></li>
+                        <li>Visit <a href="https://sites.google.com/site/xiangyangsite/home/technical-tips/linux-unix/shell-programming/awk-tips/8-powerful-awk-built-in-variables-fs-ofs-rs-ors-nr-nf-filename-fnr">Daniel Han's Technical Notes</a></li>
+                        <li>Read <a href="https://www.amazon.com/AWK-Programming-Language-Alfred-Aho/dp/020107981X">The Awk Programming language</a></li>
+                        <li>Read <a href="https://www.linuxtechi.com/awk-command-tutorial-with-examples/">Awk Command Tutorial by Pradeep Kumar</a></li>
+                    </ul>
+                </p>
+            </ul>
+            <h3>CLI Text Editors</h3>
+            <p class="container-fluid text-justify">Everything in Linux is a file, therefore, you will find your self editing
+            config files or source code very often. This is reason why it is cannonical to learn how to edit text in the
+            command line. Linux has a large number of CLI text editors. Te most popular are:</p>
+            <ul>
+                <li><a href="https://www.vim.org/">Vi/Vim</a><br></li>
+                <li><a href="https://www.nano-editor.org/">Nano</a></li>
+                <li><a href="https://www.gnu.org/software/emacs/">Emacs</a></li>
+            </ul>
+            <h5>Tutorial for learning vim</h5>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="1179" height="663" src="https://www.youtube.com/embed/IiwGbcd8S7I" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <h5>Tutorial for learning nano</h5>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="1179" height="663" src="https://www.youtube.com/embed/gyKiDczLIZ4" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <h5>Tutorial for learning emacs</h5>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe  width="1179" height="663" src="https://www.youtube.com/embed/Iagbv974GlQ" frameborder="0"
+                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                         allowfullscreen></iframe>
+            </div>
+            <p>The general advise for command line text editors is to learn the basics of vim and then master at least 1
+            CLI text editor. Learning vim is important because when linux is in Single User mode or has crashed, the only
+            text editor available is Vi.</p>
+            <!--System information-->
+            <h3>Getting System Information</h3>
+            <p class="container-fluid text-justify">The following is a list of commands that you can use to get information about your system</p>
+                <ul>
+                    <li><span class="cmds">uname</span> :Display basic information about the operating system name and system hardware.
+                        <br>
+                        <b>Example:</b>
+                        <br>
+                        Display all basic information <span class="cmds">uname -a</span>
+                    </li>
+                    <li><span class="cmds">lshw</span> :Displays detailed information of the system’s hardware configuration.
+                        <b>Note:</b> This command can display more information if run with sudo. <br>
+                        <b>Example:</b>
+                        <br>
+                        Display all information <span class="cmds">sudo lshw</span>
+                    </li>
+                    <li><span class="cmds">lsusb</span> :Display the information about USB buses and the devices connected to them.<br>
+                        <b>Example</b>
+                        <br>
+                        Display all connected USB devices <span class="cmds">lsusb</span>
+                    </li>
+                    <li><span class="cmds">lscpu</span> and <span class="cmds">lspci</span> :Lscpu is used  for displaying CPU information
+                        and Lscpu is used for display PCI bus information. <br>
+                        <b>Example:</b>
+                        <br>
+                        Display information about CPU <span class="cmds">lscpu</span>
+                        <br>Display information about PCI Buss <span class="cmds">lspci</span>
+                    </li>
+                </ul>
+            <!--Networking Commands-->
 
+            <!-- end of commands section -->
 
-
-
-
-
-        <!-- Handling Text Files -->
-        <div class="col-lg-12">
-            <h3>Handling Text Files</h3>
-        </div>
-
-        <!-- Networking Commands and System information -->
-        <div class="col-lg-12">
-            <h3>System information</h3>
-        </div>
-    </div>
-
-
-        <!--docker here -->
-    <div class="row">
-        <div class="col-lg-12">
+            <!-- Docker command -->
             <h2>Docker commands</h2>
+            <h3>Run a new container</h3>
+            <ul>
+                <li>Start a container from an image</li>
+                <span class="cmds">docker run image-name</span>
+                <li>Start a container with a name assigned</li>
+                <span class="cmds">docker run --name container_name container_image</span>
+                <li>Start a container and map a port</li>
+                <span class="cmds">docker run -p host_port:continer_port image</span>
+                <li>Start a container and map all ports
+                <span class="cmds">docker run -P image</span></li>
+                <li>Start a container in the background
+                <span class="cmds">docker run -d image</span>
+                </li>
+                <li>Start a container with an assigned hostname
+                    <span class="cmds">docker run --hostname hostname_for_image image</span>
+                </li>
+                <li>Start a container with a dns entry
+                <span class="cmds">docker run --add-host hostname:ip image</span></li>
+                <li>Start a container and map a local directory into the container
+                <span class="cmds">docker run -v host-directory:target-directory image</span> <br>
+                Example: <br><span class="cmds">docker run -v ~/website:/var/www/html/ apache2</span></li>
+                <li>Start a container but change the entry point
+                <span class="cmds">docker run -it --entrypoint executable image</span>
+                    <br>Example:<br>
+                    <span class="cmds">docker run -it --entrypoint bash nginx</span>
+                </li>
+            </ul>
+            <h3>Manage containers</h3>
+            <ul>
+                <li>Show a list of running containers
+                <span class="cmds">docker ps</span></li>
+                <li>Show a list of all containers
+                <span class="cmds">docker ps -a</span></li>
+                <li>Delete a container
+                <span class="cmds">docker rm container</span></li>
+                <li>Delete stopped container
+                <span class="cmds">docker container prune</span></li>
+                <li>Stop a running container
+                <span class="cmds">docker stop container</span></li>
+                <li>Start a stopped container
+                <span class="cmds">docker start container</span></li>
+                <li>Copy a file from a container to the host
+                <span class="cmds">docker cp container:source target</span><br>Example: <br>
+                <span class="cmds">docker cp web:/index.html index.html</span></li>
+                <li>Copy a file from the host to a container
+                <span class="cmds">docker cp target container:source</span><br>Example: <br>
+                <span class="cmds">docker cp index.html web:/index.html</span></li>
+                <li>Start a shell inside a running container
+                <span class="cmds">docker exec -it container executable</span><br>Example: <br>
+                <span class="cmds">docker exec -it web bash</span></li>
+                <li>Rename a container
+                <span class="cmds">docker rename old-name new-name</span></li>
+                <li>Create an image out of a container
+                <span class="cmds">docker commit container</span></li>
+            </ul>
+            <h3>Manage images</h3>
+            <ul>
+                <li>Download an image
+                <span class="cmds">docker pull image</span></li>
+                <li>Upload an image to a repository
+                <span class="cmds">docker push image</span></li>
+                <li>Delete an image
+                <span class="cmds">docker rmi image</span></li>
+                <li>List all images
+                <span class="cmds">docker images</span></li>
+                <li>Delete dangling images
+                <span class="cmds">docker image prune</span></li>
+                <li>Delete all unused images
+                <span class="cmds">docker image prune -a</span></li>
+                <li>Build an image from a Dockerfile
+                <span class="cmds">docker build Directory</span></li>
+                <li>Tag an image
+                <span class="cmds">docker tag image newimage</span></li>
+                <li>Build and tag an image from a docker file
+                <span class="cmds">docker build -t image directory</span></li>
+                <li>Save an image to .tar file
+                <span class="cmds">docker save image > file.tar</span></li>
+                <li>Load an image from a .tar file
+                <span class="cmds">docker load -i file.tar</span></li>
+            </ul>
+            <h3>Info and stats</h3>
+            <ul>
+                <li>Show the logs for a container
+                <span class="cmds">docker logs container</span></li>
+                <li>Show stats of running container
+                <span class="cmds">docker stats</span></li>
+                <li>Show processes of a container
+                <span class="cmds">docker top container</span></li>
+                <li>Show installed docker version
+                <span class="cmds">docker version</span></li>
+                <li>Get detailed info about an object
+                <span class="cmds">docker inspect name</span></li>
+                <li>Show all modified files in container
+                <span class="cmds">docker diff container</span></li>
+                <li>Show mapped ports of a container
+                <span class="cmds">docker port container</span></li>
+            </ul>
+
         </div>
-    </div>
-</div><!-- start of body of page content -->
+        <!-- end of body of page content -->
+        <!-- Site footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-8">
+                        <h6>About</h6>
+                        <p class="text-justify">This page <i> its our attempt</i>
+                            at explaining the pillars of what makes DevOps. It
+                            starts with the definitions of Virtualization and Containerization alongside
+                            a comparison of both technologies. For containerization, we focus on Docker containers
+                            since they are the primary container technology. We also discus the Linux operating system
+                            and some basic commands to get any new user going. We hope you enjoy reading our tutorials too!
+                            <br><b>Cheers, The Team.</b>
 
+                    </div>
 
+                    <div class="col-sm-2 col-md-2">
+                        <h6>Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="../html/home.html">Home</a></li>
+                            <li><a href="../html/comp.html">Comparison</a></li>
+                            <li><a href="../html/virt.html">Virtualization</a></li>
+                            <li><a href="../html/cont.html">Containerization</a></li>
+                            <li><a href="../html/tut1.html">Web server</a></li>
+                            <li><a href="../html/tut2.html">Python App</a></li>
+                        </ul>
+                    </div>
 
-
-
-
-<!--footer -->
-<!-- Site footer -->
-<footer class="site-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8 col-md-8">
-                <h6>About</h6>
-                <p class="text-justify">This page <i> its our attempt</i>
-                    at explaining the pillars of what makes DevOps. It
-                    starts with the definitions of Virtualization and Containerization alongside
-                    a comparison of both technologies. For containerization, we focus on Docker containers
-                    since they are the primary container technology. We also discus the Linux operating system
-                    and some basic commands to get any new user going. We hope you enjoy reading our tutorials too!
-                    <br><b>Cheers, The Team.</b>
-
+                    <div class="col-sm-2 col-md-2 gitubst">
+                        <h6>Github</h6>
+                        <ul class="footer-links">
+                            <li><a href="https://github.com/ra559" class="footer-links">Ra559</a></li>
+                            <li><a href="https://github.com/lenthedev" class="footer-links">Lenthedev</a></li>
+                            <li><a href="https://github.com/ra559/dlc.git" class="footer-links">Project</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-            <div class="col-sm-2 col-md-2">
-                <h6>Links</h6>
-                <ul class="footer-links">
-                    <li><a href="../html/home.html">Home</a></li>
-                    <li><a href="../html/comp.html">Comparison</a></li>
-                    <li><a href="../html/virt.html">Virtualization</a></li>
-                    <li><a href="../html/cont.html">Containerization</a></li>
-                    <li><a href="../html/tut1.html">Web server</a></li>
-                    <li><a href="../html/tut2.html">Python App</a></li>
-                </ul>
-            </div>
-
-            <div class="col-sm-2 col-md-2 gitubst">
-                <h6>Github</h6>
-                <ul class="footer-links">
-                    <li><a href="https://github.com/ra559" class="footer-links">Ra559</a></li>
-                    <li><a href="https://github.com/lenthedev" class="footer-links">Lenthedev</a></li>
-                    <li><a href="https://github.com/ra559/dlc.git" class="footer-links">Project</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<!-- end of page content container -->
-<!-- Bootstrap core JavaScript -->
-<script src="../vendor/jquery/jquery.slim.min.js"></script>
-<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
+        </footer>
+        <!-- end of page content container -->
+        <!-- Bootstrap core JavaScript -->
+        <script src="../vendor/jquery/jquery.slim.min.js"></script>
+        <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
