@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Template</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/main_other.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Docker, Linux, and Containerization</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/cont.html">Containerization</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/virt.html">Virtualization</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/comp.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/linux.html">Linux</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="html/tut.html">
+                        Tutorials</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../html/tut1.html">Web server</a>
+                        <a class="dropdown-item" href="../html/tut2.html">Python App</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Page Content -->
+<div class="container">
+    <!-- start of tittle and sentence container -->
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h1 class="mt-5">Building an Apache Web Server Using Docker</h1>
+            <p class="lead">A web server is server software, or hardware dedicated to running this software, that can satisfy client requests on the World Wide Web</p>
+        </div>
+    </div>
+</div>
+<!-- end of tittle and sentence container -->
+<div class="container-custom-body">
+    <div class="row">
+        <!-- start of body of page content -->
+        <div class="col-lg-12">
+            <h2 class="text-center"> Environment Requirements </h2>
+            <ol>
+                <li>Install Docker on your computer. </li>
+                <i> Docker supports Mac, Linux and Windows.</i>
+                <li>Pull an Ubuntu image from Dockerhub</li>
+                <i> <a href="https://hub.docker.com"> Here</a></i>
+                <li> Install vim and apache2 within a docker container than save the container.</li>
+                <i>Log in your Ubuntu in Docker container, then install apache2. Finally, save your modification.</i>
+                <li>Share a directory between Docker and host.</li>
+                <i>To read and save data in the host, the shared directory is needed for Docker containers.</i>
+                <li>Use vi to create and edit an index.html file in the shared directory</li>
+                <i>After logging into your Ubuntu, using vi to create and edit a simple index.html file, then open it using your host browser</i>
+            </ol>
+        </div>
+    </div>
+    <!-- start of body of page content -->
+    <div class="row">
+        <!-- start of body of page content -->
+        <div class="col-lg-12">
+            <h2 class="text-center"> Key Steps and Tutorial Resources</h2>
+            <ol>
+                <li>Install Docker Engine</li>
+                <i> <a href="https://docs.docker.com/engine/install/"> Source 1 </a></i>
+                <i> <a href="https://docs.docker.com/get-docker/"> Source 2</a></i>
+                <p class="text-center">Key-step: After the installation, you can run “​docker run hello-world​” to test your installation. Below is a screenshot when you have ran this command successfully on Mac OS.</p>
+                <img class= "img-fluid center-block d-block mx-auto" src="../assets/Oct-20-2020%2022-48-41.gif" height="290">
+                <li class="mt-4">Pull an Ubuntu image from Dockerhub</li>
+                <i> <a href="https://docs.docker.com/engine/reference/commandline/pull/"> Source 3</a></i>
+                <p class="text-center">Key-step 1: ​After logging into Docker, you can run “​docker pull ubuntu”​ in your command line window. </p>
+                <img class= "img-fluid center-block d-block mx-auto"src="../assets/dockerPull.gif" height="200">
+                <p class=" text-center mt-3">Key-step 2: ​Use “docker images” to check existing Docker images on your computer. </p>
+                <img class= "img-fluid center-block d-block mx-auto" src="../assets/dockerImages.gif" height="290">
+                <li class="mt-4"> How To Commit Changes To A Docker Image With Examples</li>
+                <p class="text-center mt-3">
+                    Key-step 1: ​Run the Ubuntu image to start a Docker container, then log into this Ubuntu container:
+                </p>
+                <p class="text-center"> Command:
+                <p class="cmds ">docker run -it ubuntu:latest /bin/bash </p>
+                </p>
+                <br>
+                <img class= "img-fluid center-block d-block mx-auto" src="../assets/dockerRun.gif" height="290">
+                <i class="mt-3 text-center"> The container ID is located to the right of the current user in linux (i.e Root@ “800bbded462a”)</i>
+                <p class="text-center mt-3">
+                    Key-step 2: Install applications in this Ubuntu container.
+                </p>
+                <p class="text-center mt-4 "> Update system using:
+                <p class="cmds mb-4">“​apt-get update -y”​ </p>
+                <img class= "img-fluid center-block d-block mx-auto" src="../assets/getUpdate.gif" height="290">
+                <p class="text-center "> Install apache2 using:
+                <p class="cmds mb-4">“​apt-get install apache2 -y”​</p>
+                <img class= "img-fluid center-block d-block mx-auto" src="../assets/getApache.gif" height="290">
+                <p class="text-center "> Install vim text editor using:
+                <p class="cmds mb-4">“​apt-get install vim -y​"</p>
+                <img class= "img-fluid center-block d-block mx-auto" src="../assets/installVim.gif" height="290">
+                <p class="text-center mt-3">
+                    Key-step 3:​Exit Ubuntu container using the command
+                <p class="cmds"> exit</p>
+                </p>
+                <p class="text-center mt-3">
+                    Key-step 4:​ Commit container to create a new Docker image
+                </p>
+                </p>
+                <p class="text-center mt-3">
+                    1) Check the container using:
+                <p class="cmds">  “​docker ps -a​”</p>
+                <i class="text-center">i.e make sure to copy the id of the given ubuntu container</i>
+                </p>
+                <img class= "img-fluid center-block d-block mx-auto" src="../assets/dockerCopy.gif" height="290">
+                <br>
+                <li>Docker Basics: How to Share Data Between a Docker Container and Host</li>
+                <i> <a href="https://thenewstack.io/docker-basics-how-to-share-data-between-a-docker-container-and-host/"> Source 4 </a></i>
+                <p class="text-center">Using command:
+                <p class="cmds"> “docker run -it -p 127.0.0.1:80:80 -v /Users/lighthisels/Documents:/var/www/html ubuntu-my_apache2 /bin/bash”</p>
+                <h5 class="mb-3">Parameter explanation:</h5>
+                <ul>
+                    <li>1) -it:​ log into an interactive shell</li>
+                    <li> 2) -p:​ expose an port of Docker container.</li>
+                    <li>    3) -v:​ bind a host directory to Docker container. “/Users/lighthisels/Documents” is a
+                        directory of the host computer, and “/var/www/htm” is the default location for the entry webpage of a website. Usually we put “index. Html” is this directory
+                    </li>
+                </ul>
+                .</p>
+                <li> VI Editor in UNIX</li>
+                <i> <a href="https://www.geeksforgeeks.org/vi-editor-unix/"> Source 4 </a></i>
+                <p class="text-center mt-3">
+                    Key step 1: check the present working directory using
+                <p class="cmds"> “pwd”</p>
+                <p class="text-center mt-3">
+                    then go the html directory using:
+                <p class="cmds">  “​cd /var/www/html”​</p>
+                </p>
+                <p class="text-center" >Key step 2: create an “index.html” file using: </p>
+                <p class="cmds">  “​vi index.html​”</p>
+                </p>
+                <figcaption> Press “i” key to edit the new “index. Html” file. You can see “-- INSERT --” in the bottom of the command window, which means you can type html source code now. Try the shortcuts of vi to edit your file.</figcaption>
+                </p>
+                <img class= "img-fluid center-block d-block mx-auto" src="../assets/Oct-21-2020%2000-19-43.gif" height="290">
+                <br>
+                <p class="text-center" >After finishing your “index.html” file, press the “ESC” key of your computer then type “:wq” to write the file and then quit vi.</p>
+                <br>
+                <p class="text-center"> Meanwhile, you can find your “index.html” in your bind directory on your computer.</p>
+                <li>How to use Docker to host a website. </li>
+                <p class="text-center">Key step 1: Start apache service using “​/etc/init.d/apache2 restart​” in your Docker container. </p>
+                <img class= "img-fluid center-block d-block mx-auto " src="../assets/apacheDocker.jpeg" height="290">
+                <br>
+                <br>
+                <h3 class="text-center"> Using a browser of you host computer to access “127.0.0.1”, then you can see your website!</h3>
+                <img class= "img-fluid center-block d-block mx-auto " src="../assets/itWorks.png" height="290">
+                <h3 class="text-center"> Congratulations !</h3>
+                <br>
+                <br>
+            </ol>
+        </div>
+    </div>
+    <!--footer -->
+    <!-- Site footer -->
+</div>
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-8">
+                <h6>About</h6>
+                <p class="text-justify">This page <i> its our attempt</i>
+                    at explaining the pillars of what makes DevOps. It
+                    starts with the definitions of Virtualization and Containerization alongside
+                    a comparison of both technologies. For containerization, we focus on Docker containers
+                    since they are the primary container technology. We also discus the Linux operating system
+                    and some basic commands to get any new user going. We hope you enjoy reading our tutorials too!
+                    <br><b>Cheers, The Team.</b>
+            </div>
+            <div class="col-sm-2 col-md-2">
+                <h6>Links</h6>
+                <ul class="footer-links">
+                    <li><a href="../html/home.html">Home</a></li>
+                    <li><a href="../html/comp.html">Comparison</a></li>
+                    <li><a href="../html/virt.html">Virtualization</a></li>
+                    <li><a href="../html/cont.html">Containerization</a></li>
+                    <li><a href="../html/tut1.html">Web server</a></li>
+                    <li><a href="../html/tut2.html">Python App</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2 col-md-2 gitubst">
+                <h6>Github</h6>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/ra559" class="footer-links">Ra559</a></li>
+                    <li><a href="https://github.com/lenthedev" class="footer-links">Lenthedev</a></li>
+                    <li><a href="https://github.com/ra559/dlc.git" class="footer-links">Project</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end of page content container -->
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.slim.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
