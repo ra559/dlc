@@ -1,77 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-html,body{
-color: #343A4;
-
+html,
+body {
+	color: #343A4;
 }
-.container-custom-body{
+
+.container-custom-body {
 	margin-left: 20%;
 	margin-right: 20%;
 }
-h1{
+
+h1 {
 	font-family: Rubik, Serif;
 	font-weight: normal;
 	font-size: 4em;
-	}
-	
-h2, .lead{
+}
+
+h2,
+.lead {
 	font-family: Rubik, Serif;
 	font-weight: light;
 }
 
-p,body,span{
+p,
+body,
+span {
 	font-family: Karla, Serif;
 	line-height: 3vh;
 }
 
-
-.dropdown-item{
+.dropdown-item {
 	color: white;
 	background-color: #343A40;
 }
-.dropdown-item:hover{
 
-}
-.dropdown-menu{
+.dropdown-item:hover {}
+
+.dropdown-menu {
 	background-color: #343A40;
 	border: 0px;
 }
-.cmds{
+
+.cmds {
 	font-family: "Courier New";
-	background-color: #49535a;
+	background-color: #343A40;
 	color: white;
-	padding-left: .5%;
-	padding-right: .5%;
-	border-radius: 2px;
+	padding-left: 2%;
+	padding-right: 2%;
+	border-radius: 8px;
 	text-align: center;
 	margin-top: 1%;
 	margin-bottom: 1%;
 }
 
-h4{
+h4 {
 	text-align: center;
 	background-color: #0893aa;
 	color: white;
 	margin-bottom: 0px;
 	margin-top: 3%;
 }
-.container-cmds{
+
+.container-cmds {
 	background-color: #1d6676;
 	padding: 2%;
 	margin-top: 0px;
 	color: white;
 }
-.container-cmds p{
+
+.container-cmds p {
 	margin-bottom: 1%;
 	margin-top: 1%;
 }
 
-.img-fluid
-{
+.img-fluid {
 	max-height: 300px;
 	height: auto;
 }
 
+
 /* Jumbtron */
+
 .jumbotron {
 	color: white;
 	background-repeat: no-repeat;
@@ -83,11 +91,3 @@ h4{
 	text-align: center;
 	font-size: 2em;
 }
-
-h3{
-	background-color: #0c5460;
-	color: whitesmoke;
-	padding: 1%;
-}
-
-
