@@ -46,8 +46,35 @@ p,body,span{
 	margin-top: 1%;
 	margin-bottom: 1%;
 }
+
+h4{
+	text-align: center;
+	background-color: #0893aa;
+	color: white;
+	margin-bottom: 0px;
+	margin-top: 3%;
+}
+.container-cmds{
+	background-color: #1d6676;
+	padding: 2%;
+	margin-top: 0px;
+	color: white;
+}
+.container-cmds p{
+	margin-bottom: 1%;
+	margin-top: 1%;
+}
+
+.img-fluid
+{
+	max-height: 300px;
+	height: auto;
+}
+
+
 h3{
 	background-color: #0c5460;
 	color: whitesmoke;
 	padding: 1%;
 }
+
