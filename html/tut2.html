@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Tutorial 2</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/main_other.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link href="https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Docker, Linux, and Containerization</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/cont.html">Containerization</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/virt.html">Virtualization</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/comp.html">Comparison</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/linux.html">Linux</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="html/tut.html">
+                                Tutorials</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../html/tut1.html">Web server</a>
+                                <a class="dropdown-item" href="../html/tut2.html">Python App</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/about.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container text-center">
+            <h1 class="mt-5">How to connect Docker and Pycharm to write python code.</h1>
+            <p class="lead">
+                <i>Linux is a family of open-source Unix-like operating systems based on the Linux kernel, an operating
+                    system kernel first released on September 17, 1991, by Linus Torvalds. Linux is typically packaged in
+                    a Linux distribution. <a href="https://en.wikipedia.org/wiki/Linux">-Wikipedia</a></i>
+            </p>
+        </div>
+        <div class="container-custom-body">
+            <h2>Step 1: Software installation</h2>
+                <p class="container-fluid text-justify">I am using Ubuntu 20.04. All the instructions in this tutorial
+                assume that the reader is using Ubuntu 20.04 or a Ubuntu distribution. The software that we need to install are:</p>
+            <ul>
+                <li>Git - <span class="cmds">sudo apt install git -y</span></li>
+                <li>Docker - <span class="cmds">curl https://robertalberto.com/scripts/dockerinstaller.sh | bash</span></li>
+                <span class="text-justify">After installing docker, make sure to create a group for docker if one is not created. You will need
+                to add your user to the docker group. If you do not do this, only root will be able to use docker.</span><br>
+                <ul>
+                    <li>To create a group use: <span class="cmds">sudo groupadd docker</span></li>
+                    <li>To add a user to the group use: <span class="cmds">sudo usermod -aG docker $USER</span></li>
+                    <li>Activate group ownership changes: <span class="cmds">newgrp docker</span></li>
+                </ul>
+
+                <li>Jetbrains toolbox <br>
+                <ol>
+                    <li> Download the Jetbrains toolbox from here: <a href="https://www.jetbrains.com/toolbox-app/">Toolbox</a></li>
+                    <li> From your Home directory run the following commands: <br>
+                        <span class="cmds"> tar zxf Downloads/jetbrains-toolbox-1.18.7455.tar.gz </span><br>
+                        <span class="cmds"> cd jetbrains-toolbox-1.18.7455/</span><br>
+                        <span class="cmds"> ./jetbrains-toolbox</span><br>
+                        <p><i>Once the Jetbrains toolbox appears, select PyCharm Professional since the community edition
+                        does not support docker.</i></p>
+                    </li>
+                </ol>
+            </ul>
+
+            <h2>Step 2: Setup PyCharm</h2>
+            <p class="text-justify container-fluid">Now that all the software is installed. Start Pycharm and go complete
+            the initial configuration. You must sign in to your JetBrains Account.</p>
+            <h3>Create a Git Repo</h3>
+            <p class="container-fluid text-justify">Before you can start coding, lets create a github repository. </p>
+            <img class="rounded mx-auto d-block img-fluid" src="../assets/helloworldgitrepo.gif" alt="">
+            <p>Now lets connect Pycharm and Github so that we can get our repo from version control.</p>
+            <img class="rounded mx-auto d-block img-fluid"  src="../assets/connectinggitandpycharm.gif" alt="">
+            <p>Now that we have github and Pycharm connected, lets enable docker. Got to file -> Pluggins -> search for docker
+            -> if it is not installed, install it. Now go to: File -> Build, Execution, Deployment -> Docker. Click on the + to
+                add docker. Click on Unix Socket and at the bottom it should say Docker connected. If you get an error
+                that says "docker daemon not running". Do the following </p>
+            <ol>
+                <li>Enable and restart the docker service: <span class="cmds"> sudo systemctl enable docker; sudo systemctl restart docker</span></li>
+                <li>Restart</li>
+                <li>Try to connect docker again. It should say sucessfull</li>
+            </ol>
+            <img class="rounded mx-auto d-block img-fluid"  src="../assets/dockerconnection.gif" alt="">
+
+            <h3>Write the code</h3>
+            <p class="text-justify container-fluid">Now that our development environment is ready. Lets start by creating adocker file and they python file for our
+            hello world app.</p>
+            <ol>
+                <li>Create two files: Dockerfile and main.py</li>
+                <li>Open the Dockerfile and add the following text to it:
+                    <br>
+                    FROM python:3 <br>
+                    ADD main.py <br>
+                    CMD [ "python3", "./main.py" ] <br>
+                    These instructions will create a docker container with python3 and will run main.py that will contain
+                    our code.
+                </li>
+                <li>Create the file main.py and add the following lines: <br>
+                    print("This is a simple python App")<br>
+                    print("Hello world")<br>
+                </li>
+                <li>Now lets commit these changes and push them to github so that we can save all our work. <br>
+                <span class="cmds">git add .</span><br>
+                <span class="cmds">git commit -m "Task: added dockerfile and main.py"</span><br>
+                <span class="cmds">git push</span>
+                </li>
+            </ol>
+            <img class="rounded mx-auto d-block img-fluid" src="../assets/gitcommit.gif" alt="">
+
+            <h3>Run the code in a docker container</h3>
+            <p class="container-fluid text-justify">To run this application in a docker container use the following commands:</p>
+            <ol>
+                <li>Build the docker container: <span class="cmds">docker build -t helloworld .</span>
+                    <span>If you get this error message:</span>
+                    <p class="text-danger">Error response from daemon: Dockerfile parse error line 2: ADD requires at least two arguments, but only one was provided. Destination could not be determined.</p>
+                    <p>The solution is a missing backslash at the end of line 2</p>
+                </li>
+                <li>Run the app with: <span class="cmds">docker run -t -i helloworld</span></li>
+            </ol>
+            <img class="rounded mx-auto d-block img-fluid" src="../assets/apprunning.gif" alt="">
+        </div>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-8">
+                        <h6>About</h6>
+                        <p class="text-justify">This page <i> its our attempt</i>
+                            at explaining the pillars of what makes DevOps. It
+                            starts with the definitions of Virtualization and Containerization alongside
+                            a comparison of both technologies. For containerization, we focus on Docker containers
+                            since they are the primary container technology. We also discus the Linux operating system
+                            and some basic commands to get any new user going. We hope you enjoy reading our tutorials too!
+                            <br><b>Cheers, The Team.</b>
+
+                    </div>
+
+                    <div class="col-sm-2 col-md-2">
+                        <h6>Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="../html/home.html">Home</a></li>
+                            <li><a href="../html/comp.html">Comparison</a></li>
+                            <li><a href="../html/virt.html">Virtualization</a></li>
+                            <li><a href="../html/cont.html">Containerization</a></li>
+                            <li><a href="../html/tut1.html">Web server</a></li>
+                            <li><a href="../html/tut2.html">Python App</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-2 col-md-2 gitubst">
+                        <h6>Github</h6>
+                        <ul class="footer-links">
+                            <li><a href="https://github.com/ra559" class="footer-links">Ra559</a></li>
+                            <li><a href="https://github.com/lenthedev" class="footer-links">Lenthedev</a></li>
+                            <li><a href="https://github.com/ra559/dlc.git" class="footer-links">Project</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <!-- end of page content container -->
+        <!-- Bootstrap core JavaScript -->
+        <script src="../vendor/jquery/jquery.slim.min.js"></script>
+        <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+
+</html>
